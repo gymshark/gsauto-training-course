@@ -1,6 +1,10 @@
 package session0git;
 
 public class HelloWorld {
-  //Hello World
-  //Hello Owyn
+    public class HelloFatima {
+        //HelloFatima
+        public static void main(String[] args) {
+            System.out.println("Hello Fatima!");
+        }
+    }
 }
