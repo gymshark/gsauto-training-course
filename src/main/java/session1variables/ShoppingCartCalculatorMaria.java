@@ -41,6 +41,6 @@ subtotal.
 Print the subtotal, the calculated tax, and the grand total.
             */
 
-    System.out.println("Subtotal , calculated tax and the grandTotal are " + subTotal +", "+ calculatedTax +", "+ grandTotal);
+    System.out.println("Subtotal , Calculated tax and the GrandTotal are " + subTotal +", "+ calculatedTax +", "+ grandTotal);
 }
 }
