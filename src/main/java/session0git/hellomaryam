@@ -1,5 +1,0 @@
-// Hello Owyn!
-public class HelloOwyn {
-    public static void main(String[] args) {
-        System.out.println("Hello Owyn!");
-  }
