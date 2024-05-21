@@ -1,6 +1,6 @@
 package session1variables;
 
-public class ShoppingCartCalculator {
+public class ShoppingCartCalculatorMaria {
 /* Variable Declarations
 . Variable Declarations:
 1. Declare individual double variables for three item prices.
