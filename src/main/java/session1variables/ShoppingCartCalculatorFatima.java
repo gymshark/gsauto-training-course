@@ -12,7 +12,7 @@ public class ShoppingCartCalculatorFatima {
         double itemTwoPrice = 20;
         double itemThreePrice = 100;
 
-        double salesTaxRate;
+        double salesTaxRate = 0.20;
 
         int itemOneQuantity = 4;
         int itemTwoQuantity = 20;
@@ -27,6 +27,14 @@ public class ShoppingCartCalculatorFatima {
         double totalCostOfItemTwo = itemTwoPrice * itemTwoQuantity;
         double totalCostOfItemThree = itemThreePrice * itemThreeQuantity;
 
+        double salesTaxRateItemOne = totalCostOfItemOne * salesTaxRate;
+        double salesTaxRateItemTwo = totalCostOfItemTwo * salesTaxRate;
+        double salesTaxRateItemThree = totalCostOfItemThree * salesTaxRate;
+
+        double grandTotal = (salesTaxRateItemOne + salesTaxRateItemTwo + salesTaxRateItemThree) +
+                (totalCostOfItemOne + totalCostOfItemTwo + salesTaxRateItemThree);
+
+        System.out.println(grandTotal);
 
 
 
