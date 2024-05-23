@@ -13,7 +13,7 @@ public class SchoolGradingSystemFatima {
     //3.	Include validation to ensure the score is within a 0-100 range.
 
     public static void main(String[] args) {
-        int score = 75;
+        int score = 65;
 
         if (score < 60) {
             System.out.println("Your score is a F");
