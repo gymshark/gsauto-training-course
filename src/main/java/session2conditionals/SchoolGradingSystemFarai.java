@@ -1,6 +1,6 @@
 package session2conditionals;
 
-public class SchoolGradingSystem {
+public class SchoolGradingSystemFarai {
     public static void main(String[] args) {
 
         int score = 74;

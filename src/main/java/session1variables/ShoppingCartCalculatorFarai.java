@@ -1,6 +1,6 @@
 package session1variables;
 
-public class ShoppingCartCalculator {
+public class ShoppingCartCalculatorFarai {
     public static void main(String[] args) {
 
         double itemPriceOne = 5.0;
