@@ -2,7 +2,7 @@ package session1variables;
 
 public class Variables {
 
-  public static void main(String[] args) {
+  public static void  main(String[] args) {
     //Explicit conversion/casting
     double myDouble = 3.9999999999;
     int myIntFromTheDouble = (int) myDouble;
