@@ -2,9 +2,9 @@ package session2conditionals;
 
 public class SchoolGradingSystemFatima {
 
-
     public static void main(String[] args) {
         int score = 60;
+
         if (score < 0 || score > 100) {
             throw new IndexOutOfBoundsException("Invalid Scoring range, Please enter a score between 0 and 100");
         }
