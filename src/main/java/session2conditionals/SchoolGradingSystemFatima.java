@@ -8,7 +8,7 @@ public class SchoolGradingSystemFatima {
 
         if (score < 60) {
             System.out.println("Your score is F");
-        } else if (score > 60 && score < 70) {
+        } else if (score >= 60 && score < 70) {
             System.out.println("Your score is D");
         } else if (score >= 70 && score < 80) {
             System.out.println("Your score is C");
