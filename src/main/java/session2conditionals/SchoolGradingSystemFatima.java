@@ -1,10 +1,13 @@
 package session2conditionals;
 
 public class SchoolGradingSystemFatima {
-    
+
 
     public static void main(String[] args) {
-        int score = 98;
+        int score = 60;
+        if (score < 0 || score > 100) {
+            throw new IndexOutOfBoundsException("Invalid Scoring range, Please enter a score between 0 and 100");
+        }
 
         if (score < 60) {
             System.out.println("Your score is F");
@@ -16,8 +19,8 @@ public class SchoolGradingSystemFatima {
             System.out.println("Your score is B");
         } else if (score >= 90) {
             System.out.println("Your score is A");
-        }
 
-        System.out.println(score);
+            System.out.println(score);
+        }
     }
 }
