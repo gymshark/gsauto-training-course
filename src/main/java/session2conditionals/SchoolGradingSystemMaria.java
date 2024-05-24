@@ -5,24 +5,25 @@ public class SchoolGradingSystemMaria {
 
 // Hardcode student score
 
-        int score = 0;
+        int score = 98778;
 
 //Determine grades based on scoring range
 
-        if (score >= 0 || score <= 100) {
-            if (score >= 90 && score <= 100) {
+        if (score >= 0 && score <= 100) {
+            if (score >= 90) {
                 System.out.println("Grade - A ");
-            } else if (score >= 80 && score <= 89) {
+            } else if (score >= 80) {
                 System.out.println("Grade - B ");
-            } else if (score >= 70 && score <= 79) {
+            } else if (score >= 70) {
                 System.out.println("Grade - C ");
-            } else if (score >= 60 && score <= 69) {
+            } else if (score >= 60) {
                 System.out.println("Grade - D ");
-            } else if (score < 60 && score >= 0) {
+            } else {
                 System.out.println("Grade - F");
-            } else
-                // Validation to ensure the score is within a 0-100 range.
-                throw new IndexOutOfBoundsException(" Invalid Scoring range , Please enter a score between 0 and 100");
+            }
+        }else {
+            //Throws an exception for scores other than (0 - 100)
+            throw new IndexOutOfBoundsException("Invalid range, enter a number of 0 and 100");
         }
     }
 }
