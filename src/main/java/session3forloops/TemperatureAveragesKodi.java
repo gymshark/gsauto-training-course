@@ -5,13 +5,15 @@ public class TemperatureAveragesKodi {
   public static void main(String[] args) {
     // Declare and Initialize an Array
     int[] temperatures = {15, 25, 56, 70, 23, 45, 90};
-    int templength = temperatures.length;
+    int tempLength = temperatures.length;
 
     //For loop
-   /*  for (int i = 0; i < templength; i++) {
-      int temperatureValue = temperatures[i];
-     System.out.printf(temperatureValue + " ");
-    } */
+    int sum = 0;
+    for (int i = 0; i < tempLength; i++) {
+      sum += temperatures[i];
+    }
+    // calculate average
+    int averageTemperatureForLoop = sum / tempLength;
 
     // For-Each Loop
     int sumTemperatures = 0;
@@ -21,9 +23,11 @@ public class TemperatureAveragesKodi {
     }
 
     // Calculate Average
-    int averageTemperature = sumTemperatures / templength;
+    int averageTemperatureForEachLoop = sumTemperatures / tempLength;
 
     //Output the Result
-    System.out.printf("\nThe average temperature is: " + averageTemperature + " Degrees");
+    System.out.printf("\nThe average temperature is: " + averageTemperatureForLoop + " Degrees - (For Loop)");
+    System.out.printf("\nThe average temperature is: " + averageTemperatureForEachLoop + " Degrees - (For Each Loop)");
+
   }
 }
