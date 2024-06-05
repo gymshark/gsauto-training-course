@@ -3,7 +3,7 @@ package session6classes;
 public class BookFatima {
     private String bookTitle;
     private String author;
-    private int yearOfPublication = 2030;
+    private int yearOfPublication;
 
 
     public BookFatima(String bookTitle, String author, int yearOfPublication) {
