@@ -30,7 +30,7 @@ public class LibraryBookFatima {
         Book book1 = new Book("Diaspora Diaries", " Fatima", 2002);
         Book book2 = new Book("The Cat Sat On The Mat", "Unknown", 2020);
 
-        book1.setYearOfPublication(2030);
+        book1.setYearOfPublication(20300);
         book2.setYearOfPublication(1993);
 
         book1.bookDetails();
