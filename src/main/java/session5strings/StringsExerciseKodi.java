@@ -31,7 +31,7 @@ public class StringsExerciseKodi {
     outputResults.append("Original Email: ").append(email).append("\n")
       .append("Extracted Username: ").append(userName).append("\n")
       .append("Uppercase Name: ").append(upperCaseName).append("\n")
-      .append("Username matches formatted name (ignoring case): ").append(validateName);
+      .append("Results comparison: ").append(validateName);
 
     System.out.println(outputResults);
   }
