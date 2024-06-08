@@ -4,6 +4,7 @@ public class StringsExerciseKodi {
 
   public static void main(String[] args) {
 
+    // Create strings for name and email
     String name = "Kodi Johnson";
     String email = "kodi.johnson@gymshark.com";
 
