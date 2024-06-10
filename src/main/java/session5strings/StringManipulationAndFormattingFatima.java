@@ -1,7 +1,5 @@
 package session5strings;
 
-import java.util.function.ToDoubleBiFunction;
-
 public class StringManipulationAndFormattingFatima {
 
 
@@ -27,13 +25,16 @@ public class StringManipulationAndFormattingFatima {
         boolean isTheUserNameEqualToName = emailAddress.replaceAll("\\.", " ")
                 .substring(0, 12).equalsIgnoreCase(name);
 
-        message.append(emailAddress).append(" ");
-        message.append(username).append(" ");
-        message.append(upperCaseName).append(" ");
-        message.append(isTheUserNameEqualToName);
+        message.append("Email: ").append(emailAddress).append("\n");
+        message.append("Username: ").append(username).append("\n");
+        message.append("Name in Uppercase: ").append(upperCaseName).append("\n");
+        message.append("Does the username match the name (ignoring case): ").append(isTheUserNameEqualToName);
 
-        System.out.printf("Email is is %s, Username is %s, the name is %s. Is username and name the same: %b"
-                , emailAddress, username, upperCaseName, isTheUserNameEqualToName);
+        System.out.println(message);
+
+        //old print statement - System.out.printf("Email is is %s, Username is %s, the name is %s. Is username and name the same: %b"
+        //    ,emailAddress, username, upperCaseName, isTheUserNameEqualToName);
+
 
     }
 
