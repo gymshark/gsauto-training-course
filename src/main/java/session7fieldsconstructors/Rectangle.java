@@ -34,20 +34,18 @@ public class Rectangle {
   public void rectangleDetails() {
     System.out.println("The length: " + getLength());
     System.out.println("The width: " + getWidth());
-    System.out.printf("The area: " + calculateArea(getLength(), getWidth()) + "%n");
-    System.out.printf("The perimeter: " + calculateParameter(getLength(), getWidth()));
+    System.out.printf("The area: %.2f \n", calculateArea(getLength(), getWidth()));
+    System.out.printf("The perimeter: %.2f \n", calculateParameter(getLength(), getWidth()));
   }
 
-
   public static void main(String[] args) {
-
     Rectangle defaultRectangle = new Rectangle();
     Rectangle parameterisedRectangle = new Rectangle(2.2, 3.2);
 
-    System.out.println("Default rectangle details: \n");
+    System.out.println("Default rectangle details:");
     defaultRectangle.rectangleDetails();
 
-    System.out.println("Parameterised rectangle details: \n");
+    System.out.println("Parameterised rectangle details:");
     parameterisedRectangle.rectangleDetails();
   }
 }
