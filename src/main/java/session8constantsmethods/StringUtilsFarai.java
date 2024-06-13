@@ -11,15 +11,12 @@ public class StringUtilsFarai {
 
   public static int countVowels(String myConstant) {
     int count = 0;
+    String vowels = "AEIOUaeiou";
 
     for (int i = 0; i < myConstant.length(); i++) {
 
-      if (myConstant
-        .charAt(i) == 'a' || myConstant.charAt(i) == 'e'
-        || myConstant.charAt(i) == 'i'
-        || myConstant.charAt(i) == 'o'
-        || myConstant.charAt(i) == 'u') {
-
+      char currentChar = myConstant.charAt(i);
+      if (vowels.indexOf(currentChar) != -1) {
         count++;
       }
     }
