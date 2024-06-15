@@ -25,7 +25,7 @@ public class FieldsConstructorsKodi {
 
   // Implement method to calculate perimeter (2 * (length + width))
   public double calculatePerimeter() {
-    return (2 * (this.width + this.length));
+    return (2 * (length + width));
   }
 
   // Implement a method to print the details of the rectangle
