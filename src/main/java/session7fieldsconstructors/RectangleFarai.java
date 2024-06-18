@@ -1,16 +1,16 @@
 package session7fieldsconstructors;
 
-public class Rectangle {
+public class RectangleFarai {
 
   private double length;
   private double width;
 
-  public Rectangle() {
+  public RectangleFarai() {
     this.length = 1.0;
     this.width = 1.0;
   }
 
-  public Rectangle(double length, double width) {
+  public RectangleFarai(double length, double width) {
     this.length = length;
     this.width = width;
   }
@@ -39,13 +39,13 @@ public class Rectangle {
   }
 
   public static void main(String[] args) {
-    Rectangle defaultRectangle = new Rectangle();
-    Rectangle parameterisedRectangle = new Rectangle(2.2, 3.2);
+    RectangleFarai defaultRectangleFarai = new RectangleFarai();
+    RectangleFarai parameterisedRectangleFarai = new RectangleFarai(2.2, 3.2);
 
     System.out.println("Default rectangle details:");
-    defaultRectangle.rectangleDetails();
+    defaultRectangleFarai.rectangleDetails();
 
     System.out.println("Parameterised rectangle details:");
-    parameterisedRectangle.rectangleDetails();
+    parameterisedRectangleFarai.rectangleDetails();
   }
 }
