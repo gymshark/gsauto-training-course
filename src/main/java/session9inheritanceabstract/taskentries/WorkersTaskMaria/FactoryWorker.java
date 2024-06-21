@@ -2,7 +2,7 @@ package session9inheritanceabstract.taskentries.WorkersTaskMaria;
 
 public class FactoryWorker extends Workers {
 
-//Super class constructor
+    //Super class constructor
     public FactoryWorker(String name, String department) {
         super(name, department);
     }
@@ -12,11 +12,13 @@ public class FactoryWorker extends Workers {
     public void work() {
 
         System.out.println(getName() + " operates on the belt area in the factory and works in the " +
-                getDepartment()+ " department");
+                getDepartment() + " department");
 
     }
-// Method that prints the place/duration of the workers' break
-    public void takeBreak(){
-        System.out.println(getName()+" takes a break in the Factory canteen for about 1 hour");
+
+    // Method that prints the place/duration of the workers' break
+    @Override
+    public void takeBreak() {
+        System.out.println(getName() + " takes a break in the Factory canteen for about 1 hour");
     }
 }

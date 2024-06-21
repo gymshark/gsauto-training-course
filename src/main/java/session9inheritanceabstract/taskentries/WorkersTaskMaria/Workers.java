@@ -3,33 +3,12 @@ package session9inheritanceabstract.taskentries.WorkersTaskMaria;
 
 public abstract class Workers {
     private String name;
-    private String Department;
+    private String department;
 
     //Parent Class Constructor
     public Workers(String name, String department) {
         this.name = name;
-        Department = department;
-    }
-
-    //Getters
-    public String getName() {
-        return name;
-    }
-
-    // Two abstract methods work() and takeBreak()
-
-    public String getDepartment() {
-        return Department;
-    }
-
-    public abstract void work();
-
-    //Common method that can be shared by subclasses - Displays Workers basic information.
-
-    public abstract void takeBreak();
-
-    public void displayBasicInfo() {
-        System.out.println("Worker name - " + getName() + " ,Department- " + getDepartment());
+        this.department = department;
     }
 
     //Main Class
@@ -52,6 +31,27 @@ public abstract class Workers {
         o1.work();
         o1.takeBreak();
 
+    }
+
+    // Two abstract methods work() and takeBreak()
+
+    //Getters
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    //Common method that can be shared by subclasses - Displays Workers basic information.
+
+    public abstract void work();
+
+    public abstract void takeBreak();
+
+    public void displayBasicInfo() {
+        System.out.println("Worker name - " + name + " ,Department- " + department);
     }
 
 

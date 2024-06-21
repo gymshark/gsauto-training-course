@@ -15,8 +15,9 @@ public class RemoteWorker extends Workers {
         System.out.println(getName() + " is writing some code during their WFH and belongs to " + getDepartment() + " department");
 
     }
-// Method that prints the place/duration of the workers' break
 
+    // Method that prints the place/duration of the workers' break
+    @Override
     public void takeBreak() {
         System.out.println(getName() + " takes a break during WFH by taking a 20 min walk");
     }

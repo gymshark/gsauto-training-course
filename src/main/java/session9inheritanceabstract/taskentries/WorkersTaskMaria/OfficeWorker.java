@@ -17,8 +17,9 @@ public class OfficeWorker extends Workers {
         System.out.println(getName() + " is processing some docs for the " + getDepartment() + " department");
 
     }
-// Method that prints the place/duration of the workers' break
 
+    // Method that prints the place/duration of the workers' break
+    @Override
     public void takeBreak() {
         System.out.println(getName() + " takes a break in the Office breakout area for 40 min");
     }
