@@ -1,15 +1,17 @@
 package session9inheritanceabstract.taskentries;
 
-public class OfficeWorkerFatima extends WorkerFatima{
+public class OfficeWorkerFatima extends WorkerFatima {
 
     public OfficeWorkerFatima(String name, String department) {
         super(name, department);
     }
 
+    @Override
     void work() {
         System.out.println(name + " is processing paperwork");
     }
 
+    @Override
     void takeBreak() {
         System.out.println(name + " has not taken a break");
     }
