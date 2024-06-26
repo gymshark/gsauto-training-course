@@ -19,7 +19,4 @@ public abstract class Worker {
     System.out.println("Name: " + name);
     System.out.println("Department: " + department);
   }
-
-
 }
-
