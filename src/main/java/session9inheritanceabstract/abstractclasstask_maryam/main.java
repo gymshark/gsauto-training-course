@@ -2,9 +2,9 @@ package session9inheritanceabstract.abstractclasstask_maryam;
 
 public class main {
     public static void main(String[] args) {
-        worker officeworker = new OfficeWorker("Maryam",  "IT");
-        worker factoryworker = new FactoryWorker("Ali" , "Manufacturing");
-        worker remoteworker = new RemoteWorker("Zara" , "Design");
+        Worker officeworker = new OfficeWorker("Maryam",  "IT");
+        Worker factoryworker = new FactoryWorker("Ali" , "Manufacturing");
+        Worker remoteworker = new RemoteWorker("Zara" , "Design");
 
         // display info for office worker
         officeworker.workerinformation();

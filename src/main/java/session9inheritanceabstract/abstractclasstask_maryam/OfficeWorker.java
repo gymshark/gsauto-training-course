@@ -2,7 +2,7 @@ package session9inheritanceabstract.abstractclasstask_maryam;
 
 import javax.xml.namespace.QName;
 
-public class OfficeWorker extends worker{
+public class OfficeWorker extends Worker{
 
     public OfficeWorker(String name, String department) {
         super(name, department);

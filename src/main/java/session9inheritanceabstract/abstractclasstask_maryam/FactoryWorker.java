@@ -1,6 +1,6 @@
 package session9inheritanceabstract.abstractclasstask_maryam;
 
-public class FactoryWorker extends  worker{
+public class FactoryWorker extends  Worker{
 
     FactoryWorker (String name, String department){
         super(name, department);

@@ -1,6 +1,6 @@
 package session9inheritanceabstract.abstractclasstask_maryam;
 
-public class RemoteWorker extends  worker {
+public class RemoteWorker extends  Worker {
 
     public RemoteWorker (String name , String department){
         super(name, department);
