@@ -16,5 +16,7 @@ public class DeviceTestFatima {
 
         fridge.turnOn();
         fridge.isOn();
+        fridge.turnOff();
+        fridge.isOn();
     }
 }
