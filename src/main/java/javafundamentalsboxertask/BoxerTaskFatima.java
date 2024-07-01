@@ -6,17 +6,18 @@ public class BoxerTaskFatima {
 
     public static void main(String[] args) {
 
-        int boxerHealthPoints = 1000;
-        int[] punches = new int[100];
-
         Random random = new Random();
+        int[] playerPunches = new int[100];
+        int boxerHealthPoints = 1000;
+        boolean hasPunchLanded;
 
-        for (int i = 0; i < punches.length; i++) {
-            random.nextInt(100);
-            if (random.nextInt() % 5 == 0) {
+        for (int playerPunch : playerPunches) {
+            System.out.println("Punch Strength:" + random.nextInt(100));
+            if ((random.nextInt() % 5) == 0) {
                 System.out.println("Punch Landed!");
+                hasPunchLanded = true;
                 boxerHealthPoints -= random.nextInt();
-            } else if (random.nextInt() >= 90 || random.nextInt() <100) {
+            } else if (random.nextInt() >= 90 || ((random.nextInt() < 100)) && (random.nextInt() >= 90)) {
                 System.out.println("Haymaker Landed!");
                 boxerHealthPoints -= random.nextInt();
             } else System.out.println("Punch Missed!");
@@ -28,6 +29,7 @@ public class BoxerTaskFatima {
             System.out.println("Knockout");
             System.exit(0);
         }
+
     }
 }
 
