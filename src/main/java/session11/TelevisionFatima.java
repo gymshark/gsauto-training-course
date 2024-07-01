@@ -1,18 +1,21 @@
 package session11;
 
 public class TelevisionFatima implements ElectronicDeviceFatima {
+    private boolean isOn = false;
 
     @Override
-    public void turnOn() {
+    public void turnOff() {
         if (isOn()) {
             System.out.println("The television is now on");
+            isOn = true;
         } else System.out.println("The television is already on");
     }
 
     @Override
-    public void turnOff() {
+    public void turnOn() {
         if (!isOn()) {
             System.out.println("The television is now off");
+            isOn = false;
         } else {
             System.out.println("The television is already off");
         }
@@ -20,7 +23,7 @@ public class TelevisionFatima implements ElectronicDeviceFatima {
 
     @Override
     public boolean isOn() {
-        return false;
+        return isOn;
     }
 
 

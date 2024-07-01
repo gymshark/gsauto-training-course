@@ -7,16 +7,16 @@ public class DeviceTestFatima {
         RefrigeratorFatima fridge = new RefrigeratorFatima();
         LampFatima lamp = new LampFatima();
 
-        tv.turnOn();
+        tv.turnOff();
         tv.isOn();
 
         lamp.turnOff();
         lamp.isOn();
         lamp.turnOn();
+        lamp.isOn();
 
+        fridge.isOn();
         fridge.turnOn();
-        fridge.isOn();
-        fridge.turnOff();
-        fridge.isOn();
+
     }
 }
