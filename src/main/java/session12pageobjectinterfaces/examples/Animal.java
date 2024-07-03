@@ -1,4 +1,4 @@
-package session11pageobjectinterfaces.examples;
+package session12pageobjectinterfaces.examples;
 
 public class Animal {
 

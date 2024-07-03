@@ -1,4 +1,4 @@
-package session11pageobjectinterfaces.examples;
+package session12pageobjectinterfaces.tasks.fatima;
 
 public class AnimalTest {
 

@@ -1,4 +1,4 @@
-package session12enums.examples;
+package session13enums.examples;
 
 public class EnumTest {
 

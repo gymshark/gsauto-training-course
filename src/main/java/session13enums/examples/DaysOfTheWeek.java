@@ -1,4 +1,4 @@
-package session12enums.examples;
+package session13enums.examples;
 
 public enum DaysOfTheWeek {
   //Essentially instantiating your enums here with the parameters set in the constructor

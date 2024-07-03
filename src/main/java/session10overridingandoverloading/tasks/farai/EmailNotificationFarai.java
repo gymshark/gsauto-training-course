@@ -1,4 +1,4 @@
-package session10overridingandoverloading;
+package session10overridingandoverloading.tasks.farai;
 
 public class EmailNotificationFarai extends NotificationFarai {
 

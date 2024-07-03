@@ -1,4 +1,4 @@
-package session10overridingandoverloading;
+package session10overridingandoverloading.tasks.fatima;
 
 public class MainFatima {
     public static void main(String[] args) {

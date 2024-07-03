@@ -1,4 +1,4 @@
-package session10overridingandoverloading.interfacetaskkodi;
+package session11interfaces.tasks.kodi;
 
 public class Television implements ElectronicDevice{
 
