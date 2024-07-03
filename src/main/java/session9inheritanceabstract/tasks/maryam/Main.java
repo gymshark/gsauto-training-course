@@ -1,6 +1,6 @@
-package session9inheritanceabstract.abstractclasstask_maryam;
+package session9inheritanceabstract.tasks.maryam;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Worker officeworker = new OfficeWorker("Maryam",  "IT");
         Worker factoryworker = new FactoryWorker("Ali" , "Manufacturing");
