@@ -1,4 +1,4 @@
-package session10overridingandoverloading.notificationsystemkodi;
+package session10overridingandoverloading.tasks.kodi;
 
 public class Main {
 
