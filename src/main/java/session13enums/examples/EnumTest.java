@@ -3,7 +3,16 @@ package session13enums.examples;
 public class EnumTest {
 
   public static void main(String[] args) {
-    DaysOfTheWeek today = DaysOfTheWeek.FRIDAY;
-    today.isWeekend();
+
+    DirectionsFatima south = DirectionsFatima.SOUTH;
+    DirectionsFatima north = DirectionsFatima.NORTH;
+    DirectionsFatima east = DirectionsFatima.EAST;
+    DirectionsFatima west = DirectionsFatima.WEST;
+
+    south.descriptionOfDirection();
+    north.descriptionOfDirection();
+    east.descriptionOfDirection();
+    west.descriptionOfDirection();
+
   }
 }
