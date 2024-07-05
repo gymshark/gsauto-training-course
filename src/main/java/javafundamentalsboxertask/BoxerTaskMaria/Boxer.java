@@ -1,39 +1,46 @@
 package javafundamentalsboxertask.BoxerTaskMaria;
 
-public class Boxer {
 
-    //Opponent Boxer class with fields - Name, Initial and remaining Hit points
+public class Boxer {
+    //  Boxer box ;
+    Player player = new Player();
     private String boxerName;
     private int initialHitPoints;
-    private int remainingHitPoints;
 
     //Boxer class Constructor
-    public Boxer(int initialHitPoints, String boxerName, int remainingHitPoints) {
+    public Boxer(int initialHitPoints, String boxerName) {
         this.initialHitPoints = initialHitPoints;
         this.boxerName = boxerName;
+
+    }
+
+    /**
+     * Method simulating the boxer's rounds checking punches .
+     *
+     * @param initialHitPoints
+     * @param box
+     * @return
+     */
+    public int boxerRound(int initialHitPoints, Boxer box) {
         System.out.println("Boxer's Round");
         for (int i = 1; i <= 100; i += 1) {
-            initialHitPoints--;
-            remainingHitPoints = initialHitPoints;
-            System.out.println("Remaining Boxer hit points - " + remainingHitPoints);
+            if (player.punch(box)) {
+                initialHitPoints--;
+            }
         }
-    }
-
-    //Getter methods
-    public int getInitialHitPoints() {
+        System.out.println("Final Remaining Boxer hit points - " + initialHitPoints);
+        if (initialHitPoints == 0) {
+            System.out.println("Game Over ,end ");
+        }
         return initialHitPoints;
-    }
-
-    public int getRemainingHitPoints() {
-        return remainingHitPoints;
     }
 
 
     /**
-     * Method to check if Opponent Boxer is knocked out - when no hit points left
+     * Method to check if boxer is knocked out - if no hit points left
      */
     public boolean isKnockOut() {
-        if (remainingHitPoints <= 0) {
+        if (initialHitPoints <= 0) {
             System.out.println("Boxer - " + boxerName + " KnockOut");
             return true;
         } else {
@@ -41,4 +48,13 @@ public class Boxer {
         }
         return false;
     }
+
+
+    public void takePunch(int damage) {
+        if (player.punchLanded(2)) {
+            System.out.println("Boxer received a punch");
+        }
+
+    }
 }
+

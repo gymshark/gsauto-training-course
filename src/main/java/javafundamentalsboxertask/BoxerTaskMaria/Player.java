@@ -1,6 +1,5 @@
 package javafundamentalsboxertask.BoxerTaskMaria;
 
-
 import java.util.Random;
 
 public class Player {
@@ -15,14 +14,16 @@ public class Player {
 
 
     public Player() {
-// Looping through punches assigning random strength values  1-100 to each punch
-        for (int punch : punches) {
-            punch = rand.nextInt(100);
-            punchStrength = punch;
-            System.out.println("Punch Strength = " + punchStrength);
-            punchLanded(punchStrength); // Calling the method within loop to check if Punch landed
-        }
+//Constructor
+    }
 
+    public void printPunchStrength() {
+        for (int i = 0; i < punches.length; i++) {
+            punches[i] = rand.nextInt(100) + 1;
+            punchStrength = punches[i];
+            System.out.println("Punch strength of this punch - " + punchStrength);
+            punchLanded(punchStrength);
+        }
     }
 
     //Getter Methods
@@ -47,7 +48,7 @@ public class Player {
     /**
      * Method punchLanded()  checks if the  punch strength is a multiple of 5
      * If yes, then the punch connects
-     * If the punch strength is also > 90 then its a Double strength Punch
+     * If the punch strength is also > 90 then it is a Double strength Punch
      * Else it is a missed punch
      */
     public boolean punchLanded(int punchStrength) {
@@ -69,7 +70,23 @@ public class Player {
         return false;
 
     }
+
+    //Method for Player punch logic
+    public boolean punch(Boxer opponent) {
+        for (int punchStrength : punches) {
+            System.out.println("Punch Strength = " + punchStrength);
+            if (punchLanded(punchStrength)) {
+                int damage = punchStrength >= 90 ? punchStrength * 2 : punchStrength;
+                opponent.takePunch(damage);
+            }
+        }
+        return false;
+    }
+
+
 }
+
+
 
 
 
