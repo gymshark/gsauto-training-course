@@ -7,17 +7,17 @@ public class LampFatima implements ElectronicDeviceFatima {
     @Override
     public void turnOff() {
         if (isOn()) {
-            System.out.println("The Lamp is now on");
-            isOn = true;
-        } else System.out.println("The lamp is already on");
+            System.out.println("The Lamp has been switched off");
+            isOn = false;
+        } else System.out.println("The lamp is already off");
     }
 
     @Override
     public void turnOn() {
         if (!isOn()) {
-            System.out.println("The Lamp is now off");
-            isOn = false;
-        } else System.out.println("The lamp is already off");
+            System.out.println("The Lamp has been switched on");
+            isOn = true;
+        } else System.out.println("The lamp is already on");
     }
 
     @Override

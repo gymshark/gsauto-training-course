@@ -7,17 +7,17 @@ public class RefrigeratorFatima implements ElectronicDeviceFatima {
     @Override
     public void turnOff() {
         if (isOn()) {
-            System.out.println("The Refrigerator is now on");
-            isOn = true;
-        } else System.out.println("The Refrigerator is already on");
+            System.out.println("The Refrigerator has been switched off");
+            isOn = false;
+        } else System.out.println("The Refrigerator is already off");
     }
 
     @Override
     public void turnOn() {
         if (!isOn()) {
-            System.out.println("The Refrigerator is now off");
-            isOn = false;
-        } else System.out.println("The Refrigerator is already off");
+            System.out.println("The Refrigerator has been switched on");
+            isOn = true;
+        } else System.out.println("The Refrigerator is already on");
     }
 
     @Override
