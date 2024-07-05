@@ -15,11 +15,12 @@ public enum DirectionsTask_Maria {
     }
 
     public static void main(String[] args) {
-        DirectionsTask_Maria east = DirectionsTask_Maria.EAST;
-        DirectionsTask_Maria north = DirectionsTask_Maria.NORTH;
 
-        east.directionDescription();
-        north.directionDescription();
+        for (DirectionsTask_Maria direction : DirectionsTask_Maria.values()) {
+            System.out.println("The directions are - " + direction);
+
+        }
+
     }
 
     public String directionDescription() {
