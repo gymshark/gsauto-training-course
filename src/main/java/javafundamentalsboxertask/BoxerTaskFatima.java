@@ -12,7 +12,7 @@ public class BoxerTaskFatima {
         for (int i = 0; i < playerPunches.length; i++) {
             playerPunches[i] = random.nextInt(100) + 1;
             int punchStrength = playerPunches[i];
-            System.out.println("Punch Strength:" + random.nextInt(100));
+            System.out.println("Punch Strength:" + punchStrength);
 
             if (punchStrength % 5 == 0) {
                 if (punchStrength >= 90) {
@@ -28,14 +28,15 @@ public class BoxerTaskFatima {
                 System.out.println("Punch Missed!");
             }
 
-            if (boxerHealthPoints > 0) {
-                System.out.println("He's still standing after 100 punches!");
-            } else if ((boxerHealthPoints == 0) || (boxerHealthPoints < 0)) {
+            if (boxerHealthPoints <= 0) {
                 System.out.println("Knockout");
                 break;
             }
         }
 
+        if (boxerHealthPoints > 0) {
+            System.out.println("He's still standing after 100 punches!");
+        }
 
 
     }
