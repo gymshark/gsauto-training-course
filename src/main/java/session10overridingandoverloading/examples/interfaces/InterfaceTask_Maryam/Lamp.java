@@ -6,14 +6,25 @@ public class Lamp implements ElectronicDevice{
 
     @Override
     public void turnON() {
-        power = true ;
-        System.out.println("Lamp is now on");
+        if (!power) {
+            power = true;
+            System.out.println("Lamp is now on");
+        }
+        else {
+                System.out.println("Lamp is already on");
+            }
+
     }
 
     @Override
     public void turnOff() {
-        power = false;
-        System.out.println("Lamp is now off");
+        if (!power) {
+            power = true;
+            System.out.println("Lamp is now off");
+        }
+        else {
+            System.out.println("Lamp is already off");
+        }
 
     }
 

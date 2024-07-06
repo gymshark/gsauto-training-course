@@ -6,14 +6,21 @@ public class Refrigirator implements ElectronicDevice{
 
     @Override
     public void turnON() {
+        if (!power){
        power= true;
-        System.out.println("Refrigerator is on");
+        System.out.println("Refrigerator is on");}
+        else {
+            System.out.println("Refrigerator is already on");
+        }
     }
 
     @Override
     public void turnOff() {
-        power = false;
-        System.out.println("Refrigerator is off");
+        if(!power){
+        power = true;
+        System.out.println("Refrigerator is off");}
+        else {
+            System.out.println("Refrigerator is already off");}
     }
 
     @Override

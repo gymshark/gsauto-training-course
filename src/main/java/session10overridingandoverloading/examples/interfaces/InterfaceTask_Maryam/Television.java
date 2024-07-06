@@ -6,15 +6,24 @@ public class Television implements ElectronicDevice{
 
     @Override
     public void turnON() {
+        if (!power){
         power = true;
-        System.out.println("Television is on");
+        System.out.println("Television is on");}
+        else {
+            System.out.println("Television is already on");
+        }
 
     }
 
     @Override
     public void turnOff() {
+        if (!power) {
         power = false;
-        System.out.println("Television is off");
+        System.out.println("Television is off");}
+        else  {
+            System.out.println("Television is already off");
+        }
+
     }
 
     @Override

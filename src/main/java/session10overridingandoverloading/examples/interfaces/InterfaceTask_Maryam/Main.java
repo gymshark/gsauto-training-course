@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Is refrigerator on?" + " " + refrigerator.isOn());
         System.out.println();
         refrigerator.turnOff();
-        System.out.println("Is refrigerator off?" + " " +  tv.isOn());
+        System.out.println("Is refrigerator off?" + " " +  refrigerator.isOn());
         System.out.println();
 
 
