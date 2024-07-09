@@ -14,5 +14,5 @@ package session13enums.examples;
         public void descriptionOfDirection() {
             System.out.println("Current direction is: " + description);
         }
-
+        
     }
