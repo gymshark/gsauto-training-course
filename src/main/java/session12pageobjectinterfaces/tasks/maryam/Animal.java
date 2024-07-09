@@ -1,4 +1,4 @@
-package session11pageobjectinterfaces.examples.pageobjectinterface_maryam;
+package session12pageobjectinterfaces.tasks.maryam;
 // top level animal class
 public class Animal {
 

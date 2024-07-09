@@ -1,4 +1,4 @@
-package session12enums.examples.enumtask_maryam;
+package session13enums.tasks.maryam;
 
 public class Direction_Test {
     public static void main(String[] args) {

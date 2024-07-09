@@ -1,4 +1,4 @@
-package session13enums.examples;
+package session13enums.tasks.maria;
 
 public enum DirectionsTask_Maria {
     NORTH("This is the north direction"),

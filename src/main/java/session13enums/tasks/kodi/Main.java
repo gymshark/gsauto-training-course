@@ -1,4 +1,4 @@
-package session13enums.examples.kodi;
+package session13enums.tasks.kodi;
 
 public class Main {
 

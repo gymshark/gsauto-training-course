@@ -1,4 +1,4 @@
-package session11;
+package session11interfaces.tasks.fatima;
 
 public interface ElectronicDeviceFatima {
 

@@ -1,4 +1,4 @@
-package session11;
+package session11interfaces.tasks.fatima;
 
 public class DeviceTestFatima {
     public static void main(String[] args) {
