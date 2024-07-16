@@ -2,8 +2,8 @@ package session9inheritanceabstract.tasks.maria;
 
 
 public abstract class Workers {
-    private String name;
-    private String department;
+    private final String name;
+    private final String department;
 
     //Parent Class Constructor
     public Workers(String name, String department) {

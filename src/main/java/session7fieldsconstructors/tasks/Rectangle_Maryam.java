@@ -2,8 +2,8 @@ package session7fieldsconstructors.tasks;
 
 public class Rectangle_Maryam {
     //Fields
-    private double length;
-    private double width;
+    private final double length;
+    private final double width;
 
     // DefaultConstructors
     public Rectangle_Maryam()

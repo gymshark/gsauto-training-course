@@ -20,10 +20,9 @@ public class StringManipulationExerciseFarai {
     boolean compareName = userName.equalsIgnoreCase(reformatName);
     System.out.println("Are the names equal ?: " + compareName);
 
-    StringBuilder sb = new StringBuilder();
-    sb.append(String.format("The username: %s%n", userName)).append(String.format("Email: %s%n", email)).append(String.format("Uppercase Name: %s%n",
-      nameToUpperCase)).append("The values are equal ").append(compareName);
-    String formattedMessage = sb.toString();
+    String formattedMessage = String.format("The username: %s%n", userName) + String.format("Email: %s%n", email) + String.format("Uppercase Name: %s%n",
+      nameToUpperCase) +
+      "The values are equal " + compareName;
     System.out.println(formattedMessage);
 
   }

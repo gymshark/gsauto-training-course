@@ -1,8 +1,8 @@
 package session6classes.tasks;
 
 public class LibraryBookFatima {
-    private String bookTitle;
-    private String author;
+    private final String bookTitle;
+    private final String author;
     private int yearOfPublication;
 
     public LibraryBookFatima(String bookTitle, String author, int yearOfPublication) {

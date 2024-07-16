@@ -19,11 +19,10 @@ public class StringsExerciseMaryam {
 
         // string builder
 
-        StringBuilder result = new StringBuilder();
-        result.append("Original Name:").append(name).append("\n");
-        result.append("UpperCase Name:").append(UpperCaseName).append("\n");
-        result.append("Extracted Username:").append(username).append("\n");
-        result.append("Does the username match the name? ").append(nameEqualsTo ? "Yes" : "No").append("\n");
+      String result = "Original Name:" + name + "\n" +
+        "UpperCase Name:" + UpperCaseName + "\n" +
+        "Extracted Username:" + username + "\n" +
+        "Does the username match the name? " + (nameEqualsTo ? "Yes" : "No") + "\n";
         System.out.println(result);
 
     }
