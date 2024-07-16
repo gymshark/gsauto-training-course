@@ -20,7 +20,7 @@ public enum DaysOfTheWeek {
 
   //Method you can call on any day of the week to find out whether or not its the weekend
   public void isWeekend(){
-    if(isWeekend == true){
+    if(isWeekend){
       System.out.println("WOOOO Its the weekend!");
     } else {
       System.out.println("It's not the weekend");

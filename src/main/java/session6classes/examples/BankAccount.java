@@ -4,7 +4,7 @@ package session6classes.examples;
 public class BankAccount {
 
   // Private fields (Encapsulation)
-  private String accountNumber;
+  private final String accountNumber;
   private double balance;
 
   // Public constructor

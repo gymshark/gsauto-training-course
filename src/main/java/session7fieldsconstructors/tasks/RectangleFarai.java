@@ -2,8 +2,8 @@ package session7fieldsconstructors.tasks;
 
 public class RectangleFarai {
 
-  private double length;
-  private double width;
+  private final double length;
+  private final double width;
 
   public RectangleFarai() {
     this.length = 1.0;
