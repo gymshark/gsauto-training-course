@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class BoxerTaskKodi {
 
-  // boolean Method to check if the punch landed
+  // boolean Method to check if the punch landed /
   public static boolean punchLanded(int punchPower) {
     return punchPower % 5 == 0;
   }
