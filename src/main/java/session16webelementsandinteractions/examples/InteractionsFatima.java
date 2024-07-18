@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebElement;
 
-import javax.swing.*;
+//3.	Verify that a submission confirmation appears.
 
 
 public class InteractionsFatima {
@@ -25,11 +25,7 @@ public class InteractionsFatima {
         WebElement email = driver.findElement(By.id("userEmail"));
         email.sendKeys("fatima.test@test.com");
 
-        //2.	Select gender using radio buttons.
-        //4.	Choose a date of birth using the date picker.
-
-
-        WebElement female = driver.findElement(By.cssSelector(".custom-control custom-radio custom-control-inline #gender-radio-2"));
+        WebElement female = driver.findElement(By.cssSelector(".custom-control-input #gender-radio-2"));
         female.click();
 
         WebElement mobileNumber = driver.findElement(By.id("userNumber"));
@@ -63,19 +59,8 @@ public class InteractionsFatima {
         WebElement address = driver.findElement(By.id("currentAddress"));
         address.sendKeys("current test address. B99 666");
 
-        WebElement submitButton = driver.findElement(By.cssSelector(".btn btn-primary"));
-        submitButton.click();
-
-        //7.	Upload a picture if the site supports it.
-        //8.	Enter current address in a text area.
-        //3.	Submit the Form:
-        //1.	Scroll to the bottom of the page.
-        //2.	Click the submit button.
-        //3.	Verify that a submission confirmation appears.
-
-
-
-
+//        WebElement submitButton = driver.findElement(By.cssSelector(".btn btn-primary"));
+//        submitButton.click();
 
 
     }
