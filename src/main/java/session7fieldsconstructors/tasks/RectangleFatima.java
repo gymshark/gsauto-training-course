@@ -2,8 +2,8 @@ package session7fieldsconstructors.tasks;
 
 public class RectangleFatima {
 
-    private double length;
-    private double width;
+    private final double length;
+    private final double width;
 
     public RectangleFatima() {
         length = 1;

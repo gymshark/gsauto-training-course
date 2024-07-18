@@ -3,7 +3,7 @@ package session7fieldsconstructors.examples;
 public class Car {
 
   private String color;        // Instance field
-  private static int numberOfWheels = 4;  // Static field
+  private static final int numberOfWheels = 4;  // Static field
 
   public static void main(String[] args) {
     Car car1 = new Car();

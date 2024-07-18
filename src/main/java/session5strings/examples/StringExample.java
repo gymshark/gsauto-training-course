@@ -11,7 +11,7 @@ public class StringExample {
 
     // String Class: Creating strings
     String greeting = "Hello";
-    String farewell = new String("Goodbye");
+    String farewell = "Goodbye";
 
     // String Equality: Comparing strings
     boolean isEqual = greeting.equals(farewell); // false
@@ -27,11 +27,9 @@ public class StringExample {
     String gpaStr = Double.toString(gpa); // "3.75"
 
     // StringBuilder: Efficient string manipulation
-    StringBuilder sb = new StringBuilder();
-    sb.append(fName);
-    sb.append(" ");
-    sb.append(lName);
-    String fullName = sb.toString();
+    String fullName = fName +
+      " " +
+      lName;
 
     // String Concatenation using + operator
     String concatenated = fName + " " + lName;

@@ -16,9 +16,8 @@ public class StringsExerciseMaria {
         boolean comparisonResult = extractedUserName.equalsIgnoreCase(replacedName);
 
         // Use String builder to print summarised result
-        StringBuilder results = new StringBuilder();
-        results.append("Original email - ").append(email).append("\n").append("Extracted username - ").append(extractedUserName).append("\n")
-                .append("Name in upper case - ").append(upperCaseName).append("\n").append("Comparison results - ").append(comparisonResult);
+      String results = "Original email - " + email + "\n" + "Extracted username - " + extractedUserName + "\n" +
+        "Name in upper case - " + upperCaseName + "\n" + "Comparison results - " + comparisonResult;
         System.out.println(results);
     }
 }

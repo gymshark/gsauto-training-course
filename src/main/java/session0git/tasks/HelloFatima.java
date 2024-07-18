@@ -1,4 +1,4 @@
-package session0git;
+package session0git.tasks;
 
 public class HelloFatima {
 
