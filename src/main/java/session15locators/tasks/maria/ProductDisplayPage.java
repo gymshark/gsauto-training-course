@@ -1,4 +1,4 @@
-package session15locators.examples.SeleniumLocators_Maria;
+package session15locators.tasks.maria;
 
 public class ProductDisplayPage {
 
