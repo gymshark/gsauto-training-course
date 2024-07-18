@@ -11,7 +11,6 @@ public class BoxerTaskKodi {
 
   public static void main(String[] args) {
 
-
     // Generate random number
     Random rand = new Random();
     int[] punches = new int[100];
@@ -66,7 +65,7 @@ public class BoxerTaskKodi {
       }
 
       // Check opponents health
-      if (hitpoints > 0 && a == 100) {
+      if (hitpoints > 0 && a == punches.length - 1) {
         System.out.println("****** He's still standing after 100 punches!!! ******");
         break;
       } else if (hitpoints <= 0) {
