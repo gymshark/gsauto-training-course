@@ -18,9 +18,9 @@ public class implicitWait {
         example1.click();
         WebElement startButton = driver.findElement(By.id("start"));
         startButton.click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement helloWorld = driver.findElement(By.id("finish"));
-        helloWorld.getText();
+        System.out.println(helloWorld.getText());
 
 
 

@@ -21,7 +21,7 @@ public class explicitWait {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10), Duration.ofMillis(100));
         WebElement helloWorld = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
-        helloWorld.getText();
+        System.out.println(helloWorld.getText());
 
 
     }
