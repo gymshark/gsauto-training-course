@@ -10,21 +10,23 @@ public class BoxerTaskKodi {
   }
 
   public static void main(String[] args) {
+
+
+    // Generate random number
+    Random rand = new Random();
+    int[] punches = new int[100];
+
+    // set up the integer Array FOR loop
+    for (int i = 0; i < punches.length; i++) {
+      punches[i] = rand.nextInt(100) + 1;
+    }
+
     // hitpoints for opponent set to 1000 outside of the loop
     int hitpoints = 1000;
 
-    // set up the integer Array FOR loop
-    for (int a = 1; a <= 100; a++) {
+    for (int a = 1; a <= punches.length; a++) {
 
-      // Generate random number
-      Random rand = new Random();
-
-      // Set bound to 100
-      int bound = 100;
-
-      // set up variable punchPower and assign the random integer 'Bound' to it
-      int punchPower = rand.nextInt(bound);
-
+    int punchPower = punches[a];
       // Pickup random punch from array
       String[] typeOfPunch =
         {"* Jab *",
@@ -64,7 +66,7 @@ public class BoxerTaskKodi {
       }
 
       // Check opponents health
-      if (hitpoints != 0 && a == 100) {
+      if (hitpoints > 0 && a == 100) {
         System.out.println("****** He's still standing after 100 punches!!! ******");
         break;
       } else if (hitpoints <= 0) {
