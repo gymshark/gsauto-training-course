@@ -1,12 +1,14 @@
 package javaclassesandinterfacestask.fatima;
 
+
 public class User {
     String title;
     String author;
-    String isbn;
+    int isbn;
     boolean isAvailable;
 
-    public User(String title, String author, String isbn, boolean isAvailable) {
+
+    public User(String title, String author, int isbn, boolean isAvailable) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
@@ -29,11 +31,11 @@ public class User {
         this.author = author;
     }
 
-    public String getIsbn() {
+    public int getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(String isbn) {
+    public void setIsbn(int isbn) {
         this.isbn = isbn;
     }
 
@@ -46,10 +48,11 @@ public class User {
     }
 
     public void borrowBook() {
-     isAvailable = false;
+        isAvailable = false;
     }
 
     public void returnBook() {
         isAvailable = true;
     }
+
 }

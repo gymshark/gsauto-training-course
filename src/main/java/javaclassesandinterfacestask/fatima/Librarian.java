@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Librarian extends User {
 
-    public Librarian(String title, String author, String isbn, boolean isAvailable) {
+    public Librarian(String title, String author, int isbn, boolean isAvailable) {
         super(title, author, isbn, isAvailable);
     }
 

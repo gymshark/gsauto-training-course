@@ -7,11 +7,11 @@ public class Book {
     String name;
     String libraryID;
     ArrayList<String> booksBorrowed;
+    boolean isAvailable;
 
-    public Book(String name, String libraryID, ArrayList<String> booksBorrowed) {
+    public Book(String name, String libraryID) {
         this.name = name;
         this.libraryID = libraryID;
-        this.booksBorrowed = booksBorrowed;
     }
 
     public String getName() {
@@ -40,10 +40,10 @@ public class Book {
 
 
     public void borrowBook(Book book) {
-        //Need to add availability of Book
             if (!booksBorrowed.contains(book)) {
             booksBorrowed.add(String.valueOf(book));
                 System.out.println("You can borrow this book as it is available");
+                isAvailable = true;
         }
 
     }
@@ -51,6 +51,7 @@ public class Book {
         if (booksBorrowed.contains(book)) {
             booksBorrowed.remove(book);
             System.out.println("Thank you for returning this book");
+            isAvailable = false;
         }
     }
 
