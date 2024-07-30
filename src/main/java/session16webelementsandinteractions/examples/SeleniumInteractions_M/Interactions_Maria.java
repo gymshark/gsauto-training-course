@@ -1,6 +1,5 @@
 package session16webelementsandinteractions.examples.SeleniumInteractions_M;
 
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,8 +38,6 @@ public class Interactions_Maria {
 
         WebElement dobPicker = driver.findElement(Locate.DOB_PICKER);
         action2.moveToElement(dobPicker).click().perform();
-        // WebElement date = driver.findElement(Locate.DATE);
-        // date.click();
         dobPicker.sendKeys(Keys.ENTER);
 
 
@@ -58,6 +55,9 @@ public class Interactions_Maria {
         WebElement address_textarea = driver.findElement(Locate.ADDRESS_TEXTAREA);
         action2.scrollToElement(address_textarea).click().sendKeys("text").perform();
 
+
+        WebElement submit_button = driver.findElement(Locate.SUBMIT_BTN);
+        action2.scrollToElement(submit_button).click().perform();
 
     }
 

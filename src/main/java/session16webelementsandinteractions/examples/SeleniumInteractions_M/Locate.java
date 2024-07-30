@@ -28,6 +28,7 @@ public class Locate {
             ("//*[@id=\"subjectsContainer\"]/div/div[1]");
     public static final By ADDRESS_TEXTAREA = By.cssSelector("textarea[id='currentAddress' and class='form-control']");
 
+    public static final By SUBMIT_BTN = By.cssSelector("button[id='submit']");
 
 
 }
