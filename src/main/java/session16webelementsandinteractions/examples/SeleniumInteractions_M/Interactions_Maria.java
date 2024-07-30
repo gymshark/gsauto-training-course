@@ -19,10 +19,9 @@ public class Interactions_Maria {
         driver.manage().window().maximize();
 
         WebElement hobbies3 = driver.findElement(Locate.HOBBIES_CHECKBOX3);
-        Actions action2= new Actions(driver);
+        Actions action2 = new Actions(driver);
 
         action2.moveToElement(hobbies3).click().perform();
-
 
 
         WebElement firstName = driver.findElement(Locate.FIRST_NAME_TEXT);
@@ -31,38 +30,35 @@ public class Interactions_Maria {
         WebElement lastName = driver.findElement(Locate.LAST_NAME);
         lastName.sendKeys("Prabhakar");
         WebElement email = driver.findElement(Locate.EMAIL);
-       email.sendKeys("maria.prabhakar@gymshark.com");
+        email.sendKeys("maria.prabhakar@gymshark.com");
 
         WebElement gender_female = driver.findElement(Locate.GENDER_FEMALE);
         action2.moveToElement(gender_female).click().perform();
-       WebElement mobileNumber = driver.findElement(Locate.MOBILE_NUM);
-       mobileNumber.sendKeys("07567789048");
+        WebElement mobileNumber = driver.findElement(Locate.MOBILE_NUM);
+        mobileNumber.sendKeys("07567789048");
 
-       WebElement dobPicker = driver.findElement(Locate.DOB_PICKER);
-    action2.moveToElement(dobPicker).click().perform();
-        WebElement date = driver.findElement(Locate.DATE);
-date.click();
-date.sendKeys(Keys.ENTER);
-
-WebElement subjects = driver.findElement(Locate.SUBJECTS);
-subjects.click();
-subjects.sendKeys("Chemistry");
+        WebElement dobPicker = driver.findElement(Locate.DOB_PICKER);
+        action2.moveToElement(dobPicker).click().perform();
+        // WebElement date = driver.findElement(Locate.DATE);
+        // date.click();
+        dobPicker.sendKeys(Keys.ENTER);
 
 
+        WebElement subjects = driver.findElement(Locate.SUBJECTS);
+        mobileNumber.click();
+        action2.scrollToElement(subjects).click().perform();
+        subjects.sendKeys("Chemistry" + Keys.ENTER);
 
 
-        WebElement upload_pic= driver.findElement(Locate.UPLOAD_BUTTON);
+        WebElement upload_pic = driver.findElement(Locate.UPLOAD_BUTTON);
         action2.scrollToElement(upload_pic).click().perform();
         upload_pic.sendKeys(Keys.CANCEL);
 
 
-
-
-
-
         WebElement address_textarea = driver.findElement(Locate.ADDRESS_TEXTAREA);
-        action2.scrollToElement(address_textarea).click().sendKeys("jgahdgjgad").perform();
-//address_textarea.sendKeys("test");
+        action2.scrollToElement(address_textarea).click().sendKeys("text").perform();
+
+
     }
 
 }
