@@ -14,13 +14,21 @@ public class Locate {
 
         public static final By EMAIL = By.id("userEmail");
 
-        public static final By GENDER_FEMALE = By.xpath("//*[@id=\"gender-radio-1\"]");
+        public static final By GENDER_FEMALE = By.cssSelector("input[value='Female']");
 
         public static final By MOBILE_NUM = By.cssSelector("input[id='userNumber']");
+        public static final By HOBBIES_CHECKBOX3 = By.cssSelector("input[id='hobbies-checkbox-3']");
 
+        public static final By UPLOAD_BUTTON = By.cssSelector("input[id='uploadPicture']");
 
-        public static final By SUBJECTS = By.cssSelector
-                ("div[class='subjects-auto-complete__control css-yk16xz-control']");
+        public static final By DOB_PICKER= By.cssSelector("input[id='dateOfBirthInput']");
+
+public  static final By DATE = By.cssSelector("div[aria-label='Choose Tuesday, July 2nd, 2024']");
+        public static final By SUBJECTS = By.xpath
+                ("//*[@id=\"subjectsContainer\"]/div/div[1]");
+        public static final By ADDRESS_TEXTAREA= By.cssSelector("textarea[id='currentAddress' and class='form-control']");
+
+        //syntax - Xpath=//*[@type='submit' or @name='btnReset']   //*[@id="subjectsContainer"]/div  //*[@id="subjectsContainer"]/div/div[1]
 
 }
 
