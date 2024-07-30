@@ -1,4 +1,4 @@
-package session13enums.examples;
+package session13enums.tasks.fatima;
 
     public enum DirectionsFatima {
         NORTH("North"),

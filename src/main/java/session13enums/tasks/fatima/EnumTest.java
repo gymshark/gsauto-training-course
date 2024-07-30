@@ -1,4 +1,4 @@
-package session13enums.examples;
+package session13enums.tasks.fatima;
 
 import java.util.ArrayList;
 
