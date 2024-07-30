@@ -5,7 +5,6 @@ Feature: Wishlist functionality
 
 Scenario: Adding an item to the wishlist
   Given the user is viewing Product page
-  When the user adds the item to wishlist
-  Then the selected item  should appear in the user's wishlist
-    And the user receives  a confirmation message that the item has been successfully added
+  When the user clicks  on "Add to Wishlist"
+  Then the item is added to the user's wishlist
 
