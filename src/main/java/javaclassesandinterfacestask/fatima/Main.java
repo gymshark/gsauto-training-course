@@ -39,7 +39,5 @@ public class Main {
         System.out.println(book2.isAvailable);
         System.out.println(book3.isAvailable);
 
-
-
     }
 }
