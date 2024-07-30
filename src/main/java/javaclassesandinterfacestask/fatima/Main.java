@@ -3,44 +3,41 @@ package javaclassesandinterfacestask.fatima;
 public class Main {
     public static void main(String[] args) {
 
-        User user1 = new User("Harry Potter", "JK Rowling", 2345, false);
-        User user2 = new User("Tis a book", "Me", 2343, true);
-        User user3 = new User("Another book", "You", 666, false);
 
-        Librarian librarian1 = new Librarian("Never let me go", "Kazuo Ishiguro", 5674, true);
+        User user1 = new User("Fatima", "LibraryID1");
+        User user2 = new User("Faisa", "LibraryID2");
+        User user3 = new User("Zahra", "LibraryID3");
+        User user4 = new User("Muna", "LibraryID4");
 
-        Book book1 = new Book("Book", "ID");
-        Book book2 = new Book("Second book", "id2");
-        Book book3 = new Book("Another book", "third id");
+        Librarian librarian1 = new Librarian("Amina", "LibraryID00", "122345");
+
+        Book book1 = new Book("Never let me go", "Kazuo Ishiguro", 1234, false);
+        Book book2 = new Book("Test book", "QA", 666, true);
+        Book book3 = new Book("Harry potter", "JK Rowling", 6789, true);
+
+        user2.displayUserDetails();
+        user3.displayUserDetails();
+        user4.displayUserDetails();
+        librarian1.displayUserDetails();
 
 
+        librarian1.returnBook(book1);
+
+        user1.borrowBook(book3);
+        user1.returnBook(book3);
+
+        user1.borrowBook(book1);
+
+        user4.borrowBook(book2);
+
+        librarian1.borrowBook();
         user1.returnBook();
-        System.out.println(user1.isAvailable);
+        librarian1.returnBook();
+        user1.borrowBook();
 
-        user2.borrowBook();
-        System.out.println(user2.isAvailable);
-
-        book1.booksBorrowed.add("Book1");
-        book1.booksBorrowed.add("Book2");
-        book1.booksBorrowed.add("Book3");
-        book1.booksBorrowed.add("Book4");
-
-        System.out.println(book1.getBooksBorrowed());
-
-        librarian1.libraryCatalogue.add(book1);
-        librarian1.libraryCatalogue.add(book2);
-        librarian1.libraryCatalogue.add(book3);
-
-
-        //•	Implement all the above classes and methods.
-        //•	Simulate borrowing and returning books.
-        //•	Print the status of books and list of books borrowed by users.
-
-//        public void displayUserDetails() {
-//
-//        }
-
-
+        System.out.println(book1.isAvailable);
+        System.out.println(book2.isAvailable);
+        System.out.println(book3.isAvailable);
 
 
 

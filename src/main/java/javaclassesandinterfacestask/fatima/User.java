@@ -1,58 +1,49 @@
 package javaclassesandinterfacestask.fatima;
 
+import java.util.ArrayList;
 
-public class User {
-    String title;
-    String author;
-    int isbn;
+public class User implements ILibraryActions {
+
+    String name;
+    String libraryID;
+    ArrayList<Book> booksBorrowed = new ArrayList<>();
     boolean isAvailable;
 
-
-    public User(String title, String author, int isbn, boolean isAvailable) {
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-        this.isAvailable = isAvailable;
+    public User(String name, String libraryID) {
+        this.name = name;
+        this.libraryID = libraryID;
     }
 
-    public String getTitle() {
-        return title;
+
+    public void borrowBook(Book book) {
+        if (book.isAvailable) {
+            booksBorrowed.add(book);
+            System.out.println("You have borrowed this book");
+            isAvailable = true;
+        } else System.out.println("You cannot borrow this book as it's not available");
+
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void returnBook(Book book) {
+        if (!book.isAvailable) {
+            booksBorrowed.remove(book);
+            System.out.println("Thank you for returning this book");
+            isAvailable = false;
+        } else System.out.println("You cannot return this book as it is not with you");
     }
 
-    public String getAuthor() {
-        return author;
-    }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public int getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(int isbn) {
-        this.isbn = isbn;
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-
-    public void setAvailable(boolean available) {
-        isAvailable = available;
-    }
-
+    @Override
     public void borrowBook() {
-        isAvailable = false;
+        System.out.println( name + " has borrowed book");
     }
 
+    @Override
     public void returnBook() {
-        isAvailable = true;
+        System.out.println(name + " has returned Book");
     }
 
+    public void displayUserDetails() {
+        System.out.println("Name: " + name + " Library ID: " + libraryID);
+    }
 }

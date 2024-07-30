@@ -1,58 +1,49 @@
 package javaclassesandinterfacestask.fatima;
 
-import java.util.ArrayList;
-
 public class Book {
 
-    String name;
-    String libraryID;
-    ArrayList<String> booksBorrowed;
+    String title;
+    String author;
+    int isbn;
     boolean isAvailable;
 
-    public Book(String name, String libraryID) {
-        this.name = name;
-        this.libraryID = libraryID;
+    public Book(String title, String author, int isbn, boolean isAvailable) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+        this.isAvailable = isAvailable;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public ArrayList<String> getBooksBorrowed() {
-        return booksBorrowed;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setBooksBorrowed(ArrayList<String> booksBorrowed) {
-        this.booksBorrowed = booksBorrowed;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
-    public String getLibraryID() {
-        return libraryID;
+    public int getIsbn() {
+        return isbn;
     }
 
-    public void setLibraryID(String libraryID) {
-        this.libraryID = libraryID;
+    public void setIsbn(int isbn) {
+        this.isbn = isbn;
     }
 
-
-    public void borrowBook(Book book) {
-            if (!booksBorrowed.contains(book)) {
-            booksBorrowed.add(String.valueOf(book));
-                System.out.println("You can borrow this book as it is available");
-                isAvailable = true;
-        }
-
+    public void borrowBook() {
+        isAvailable = false;
     }
-    public void returnBook(Book book) {
-        if (booksBorrowed.contains(book)) {
-            booksBorrowed.remove(book);
-            System.out.println("Thank you for returning this book");
-            isAvailable = false;
-        }
+
+    public void returnBook() {
+        isAvailable = true;
     }
 
 

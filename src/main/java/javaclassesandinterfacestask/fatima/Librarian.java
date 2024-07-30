@@ -1,27 +1,27 @@
 package javaclassesandinterfacestask.fatima;
 
-import java.util.List;
 
-public class Librarian extends User {
-
-    public Librarian(String title, String author, int isbn, boolean isAvailable) {
-        super(title, author, isbn, isAvailable);
-    }
+public class Librarian extends User implements ILibraryActions {
 
     String employeeID;
 
-    public List<Book> libraryCatalogue;
-    Book book;
-
-
-    public void addBooks() {
-        libraryCatalogue.add(book);
-        System.out.println("Book has been added: " + book);
-
+    public Librarian(String name, String libraryID, String employeeID) {
+        super(name, libraryID);
+        this.employeeID = employeeID;
     }
 
-    public void removeBooks() {
-        libraryCatalogue.remove(book);
-        System.out.println("Book has been removed: " + book);
+    @Override
+    public void borrowBook() {
+        System.out.println(name + " has borrowed the book");
     }
+
+    @Override
+    public void returnBook() {
+        System.out.println(name + " has returned the book");
+    }
+
+    public void displayUserDetails() {
+        System.out.println("Name: " + name + " Library ID: " + libraryID);
+    }
+
 }
