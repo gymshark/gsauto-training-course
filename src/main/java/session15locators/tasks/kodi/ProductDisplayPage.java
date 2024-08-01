@@ -2,6 +2,7 @@ package session15locators.tasks.kodi;
 
 public class ProductDisplayPage {
 
+
   public static final String SIZE_XS_CTA = "pdp-size-xs-select";
   public static final String SIZE_S_CTA = "pdp-size-s-select";
   public static final String SIZE_M_CTA = "pdp-size-m-select";
