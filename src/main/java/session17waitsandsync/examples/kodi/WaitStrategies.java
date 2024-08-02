@@ -26,6 +26,7 @@ public class WaitStrategies {
     WebElement clickLink = driver.findElement(By.linkText("Example 1: Element on page that is hidden"));
     clickLink.click();
 
+    // find start button then click it
     WebElement startButton = driver.findElement(By.id("start"));
     startButton.click();
 
@@ -46,7 +47,7 @@ public class WaitStrategies {
     // Set up an explicit wait of 20 seconds
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-    // Wait for the start button to be clickable and click it
+    // Wait for the start button to be clickable and then click it
     WebElement startButton2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#start button")));
     startButton2.click();
 
