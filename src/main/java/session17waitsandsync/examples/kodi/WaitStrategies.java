@@ -26,8 +26,8 @@ public class WaitStrategies {
     WebElement clickLink = driver.findElement(By.linkText("Example 1: Element on page that is hidden"));
     clickLink.click();
 
-    WebElement clickButton = driver.findElement(By.id("start"));
-    clickButton.click();
+    WebElement startButton = driver.findElement(By.id("start"));
+    startButton.click();
 
     // Reset the implicit wait to zero
     driver.manage().timeouts().implicitlyWait(Duration.ZERO);
@@ -43,7 +43,7 @@ public class WaitStrategies {
     WebElement clickLink2 = driver.findElement(By.linkText("Example 2: Element rendered after the fact"));
     clickLink2.click();
 
-    // Set up an explicit wait
+    // Set up an explicit wait of 20 seconds
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
     // Wait for the start button to be clickable and click it
@@ -54,6 +54,7 @@ public class WaitStrategies {
     WebElement finishText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
     System.out.println("Finish: " + finishText.getText());
 
+    // Teardown
     driver.quit();
   }
 

@@ -36,6 +36,7 @@ public class ExplicitWaits {
     WebElement finishText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
     System.out.println("Finish: " + finishText.getText());
 
+    // Teardown
     driver.quit();
   }
 
