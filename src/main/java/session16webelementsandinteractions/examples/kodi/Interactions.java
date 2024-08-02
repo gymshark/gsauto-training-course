@@ -18,6 +18,7 @@ public class Interactions {
     // Maximise browser
     driver.manage().window().maximize();
 
+    // Launch form
     driver.get("https://demoqa.com/automation-practice-form");
 
     // Forename, surname, email
