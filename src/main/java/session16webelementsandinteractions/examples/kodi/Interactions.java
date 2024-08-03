@@ -48,8 +48,8 @@ public class Interactions {
     subjectsInput.sendKeys("\n");
 
     // Select hobbies
-    driver.findElement(By.cssSelector("input[id='hobbies-checkbox-1']"));
-    driver.findElement(By.cssSelector("input[id='hobbies-checkbox-3']"));
+    driver.findElement(By.cssSelector("input[id='hobbies-checkbox-1']")).click();
+    driver.findElement(By.cssSelector("input[id='hobbies-checkbox-3']")).click();
 
     // Upload picture
     WebElement uploadPicture = driver.findElement(By.id("uploadPicture"));
