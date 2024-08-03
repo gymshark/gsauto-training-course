@@ -1,9 +1,11 @@
 package session16webelementsandinteractions.examples.kodi;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -14,6 +16,7 @@ public class Interactions {
 
     WebDriver driver = new ChromeDriver();
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10), Duration.ofMillis(100));
+    Actions action = new Actions(driver);
 
     // Maximise browser
     driver.manage().window().maximize();
@@ -48,8 +51,14 @@ public class Interactions {
     subjectsInput.sendKeys("\n");
 
     // Select hobbies
-    driver.findElement(By.cssSelector("input[id='hobbies-checkbox-1']")).click();
-    driver.findElement(By.cssSelector("input[id='hobbies-checkbox-3']")).click();
+    WebElement option1 = driver.findElement(By.id("hobbies-checkbox-1"));
+    action.moveToElement(option1).click();
+    WebElement option3 = driver.findElement(By.id("hobbies-checkbox-3"));
+    action.moveToElement(option3).click();
+
+    //driver.findElement(By.cssSelector("input[id='hobbies-checkbox-3']")).click();
+    //driver.findElement(By.id("hobbies-checkbox-1")).click();
+    //driver.findElement(By.id("hobbies-checkbox-3")).click();
 
     // Upload picture
     WebElement uploadPicture = driver.findElement(By.id("uploadPicture"));
@@ -57,6 +66,10 @@ public class Interactions {
 
     // Enter address
     driver.findElement(By.id("currentAddress")).sendKeys("3 Central Boulevard, Birmingham, UK");
+
+    // Scroll to bottom of page
+    JavascriptExecutor scrollToBottom = (JavascriptExecutor) driver;
+    scrollToBottom.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
     // Submit form
     driver.findElement(By.id("submit")).click();
