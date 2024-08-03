@@ -30,7 +30,7 @@ public class Interactions {
     driver.findElement(By.id("userEmail")).sendKeys("k.johnson@gymshark.com");
 
     // Gender
-    driver.findElement(By.cssSelector("label[for='gender-radio-1']")).click();
+    driver.findElement(By.cssSelector("label[for='gender-radio-3']")).click();
 
     // Mobile number
     driver.findElement(By.id("userNumber")).sendKeys("1234567890");
@@ -52,13 +52,9 @@ public class Interactions {
 
     // Select hobbies
     WebElement option1 = driver.findElement(By.id("hobbies-checkbox-1"));
-    action.moveToElement(option1).click();
+    action.moveToElement(option1).click().perform();
     WebElement option3 = driver.findElement(By.id("hobbies-checkbox-3"));
-    action.moveToElement(option3).click();
-
-    //driver.findElement(By.cssSelector("input[id='hobbies-checkbox-3']")).click();
-    //driver.findElement(By.id("hobbies-checkbox-1")).click();
-    //driver.findElement(By.id("hobbies-checkbox-3")).click();
+    action.moveToElement(option3).click().perform();
 
     // Upload picture
     WebElement uploadPicture = driver.findElement(By.id("uploadPicture"));
