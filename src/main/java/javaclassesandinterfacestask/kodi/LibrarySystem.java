@@ -28,8 +28,8 @@ public class LibrarySystem {
     User user3 = new User("Miguel Cotto", "MAC1980");
 
     // Librarians
-    Librarian librarian1 = new Librarian("Andre Ward", "ED209", "TEST1");
-    Librarian librarian2 = new Librarian("Shakur Stevenson", "SS4789", "TEST2");
+    Librarian librarian1 = new Librarian("Andre Ward", "ED209", "LIB1");
+    Librarian librarian2 = new Librarian("Shakur Stevenson", "SS4789", "LIB2");
 
     // Borrow Books
     user1.borrowBook(book1);
@@ -76,8 +76,9 @@ public class LibrarySystem {
       System.out.println("Employee ID: " + librarian.getEmployeeId());
     }
 
+    System.out.println("Books borrowed: " + user.getBooksBorrowed().size());
     for (Book book : user.getBooksBorrowed()) {
-      System.out.println("Books borrowed: " + user.getBooksBorrowed().size() + " \nBook title: " + book.getTitle() + " By: " + book.getAuthor());
+      System.out.println("Book title: " + book.getTitle() + " By: " + book.getAuthor());
     }
 
   }
