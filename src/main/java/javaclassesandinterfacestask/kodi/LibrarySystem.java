@@ -21,6 +21,8 @@ public class LibrarySystem {
     catalog.add(book2);
     catalog.add(book3);
     catalog.add(book4);
+    catalog.add(book5);
+    catalog.add(book6);
 
     // Users
     User user1 = new User("Kodi-Lee Johnson", "KLJ1237");
