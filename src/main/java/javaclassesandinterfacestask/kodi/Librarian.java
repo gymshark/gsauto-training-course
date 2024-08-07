@@ -24,7 +24,7 @@ public class Librarian extends User {
   // Method to add a book to the library catalog
   public void addBook(Book book, ArrayList<Book> catalog) {
     catalog.add(book);
-    System.out.println("Book added: "  + "Title: " +  book.getTitle() + " Author: " + book.getAuthor() + " ISBN: " + book.getIsbn());
+    System.out.println("Book added: "  + "Title: | " +  book.getTitle() + " Author: | " + book.getAuthor() + " ISBN: | " + book.getIsbn());
   }
 
   // Method to remove a book from the library catalog
@@ -32,7 +32,7 @@ public class Librarian extends User {
     if (catalog.contains(book))
     {
       catalog.remove(book);
-      System.out.println("Book removed: " + book.getTitle());
+      System.out.println("Book removed: "  + "Title: | " +  book.getTitle() + " Author: | " + book.getAuthor() + " ISBN: | " + book.getIsbn());
     } else {
       System.out.println("Book not available in catalog");
     }
@@ -42,7 +42,7 @@ public class Librarian extends User {
   @Override
   public void borrowBook(Book book) {
     super.borrowBook(book);
-    System.out.println("Librarian: " + getName() + " borrowed: " + book.getTitle() + ": Librarians have a shorter return period ");
+    System.out.println("Librarian: " + getName() + " borrowed: " + book.getTitle() + ": Librarians have a shorter return period");
   }
 }
 

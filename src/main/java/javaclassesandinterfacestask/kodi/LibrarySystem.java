@@ -12,7 +12,7 @@ public class LibrarySystem {
     Book book1 = new Book("Muhammad Ali Biography", "Muhammad Ali", "TEST1234");
     Book book2 = new Book("DAMN.", "Kendrick Lamar", "TEST4321");
     Book book3 = new Book("The Lion, The Witch and the Wardrobe", "CS Lewis", "TEST4567");
-    Book book4 = new Book("Testing for dummies", "Kodi-Lee", "TEST3636");
+    Book book4 = new Book("UFC for dummies", "Tito Ortiz", "TEST3636");
     Book book5 = new Book("Malcolm X", "Alex Haley", "TESTX1");
     Book book6 = new Book("Tyson", "Mike Tyson", "TYSON5060");
 
