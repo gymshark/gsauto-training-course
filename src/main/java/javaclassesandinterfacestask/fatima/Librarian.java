@@ -3,25 +3,26 @@ package javaclassesandinterfacestask.fatima;
 
 public class Librarian extends User implements ILibraryActions {
 
-    String employeeID;
+    private String employeeID;
 
-    public Librarian(String name, String libraryID, String employeeID) {
+    public Librarian(String name, String libraryID) {
         super(name, libraryID);
         this.employeeID = employeeID;
     }
 
+
     @Override
     public void borrowBook() {
-        System.out.println(name + " has borrowed the book");
+        System.out.println(super.getName() + " has borrowed the book");
     }
 
     @Override
     public void returnBook() {
-        System.out.println(name + " has returned the book");
+        System.out.println(super.getName() + " has returned the book");
     }
 
     public void displayUserDetails() {
-        System.out.println("Name: " + name + " Library ID: " + libraryID);
+        System.out.println("Name: " + super.getName() + " Library ID: " + super.getLibraryID());
     }
 
 }

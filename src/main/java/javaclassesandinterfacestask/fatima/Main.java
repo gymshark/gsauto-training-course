@@ -9,11 +9,11 @@ public class Main {
         User user3 = new User("Zahra", "LibraryID3");
         User user4 = new User("Muna", "LibraryID4");
 
-        Librarian librarian1 = new Librarian("Amina", "LibraryID00", "122345");
+        Librarian librarian1 = new Librarian("Amina", "LibraryID00");
 
-        Book book1 = new Book("Never let me go", "Kazuo Ishiguro", 1234, false);
-        Book book2 = new Book("Test book", "QA", 666, true);
-        Book book3 = new Book("Harry potter", "JK Rowling", 6789, true);
+        Book book1 = new Book("Never let me go", "Kazuo Ishiguro", "1234", false);
+        Book book2 = new Book("Test book", "QA", "666", true);
+        Book book3 = new Book("Harry potter", "JK Rowling", "6789", true);
 
         user2.displayUserDetails();
         user3.displayUserDetails();
@@ -35,9 +35,10 @@ public class Main {
         librarian1.returnBook();
         user1.borrowBook();
 
-        System.out.println(book1.isAvailable);
-        System.out.println(book2.isAvailable);
-        System.out.println(book3.isAvailable);
+
+        System.out.println(book1.isAvailable());
+        System.out.println(book2.isAvailable());
+        System.out.println(book3.isAvailable());
 
     }
 }

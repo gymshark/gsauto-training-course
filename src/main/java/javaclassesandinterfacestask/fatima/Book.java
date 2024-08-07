@@ -2,12 +2,20 @@ package javaclassesandinterfacestask.fatima;
 
 public class Book {
 
-    String title;
-    String author;
-    int isbn;
-    boolean isAvailable;
+    private String title;
+    private String author;
+    private String isbn;
+    private boolean isAvailable;
 
-    public Book(String title, String author, int isbn, boolean isAvailable) {
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
+    public Book(String title, String author, String isbn, boolean isAvailable) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
@@ -30,11 +38,11 @@ public class Book {
         this.author = author;
     }
 
-    public int getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(int isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
