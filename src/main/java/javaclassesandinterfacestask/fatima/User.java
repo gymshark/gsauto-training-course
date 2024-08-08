@@ -12,7 +12,7 @@ public class User implements ILibraryActions {
     public User(String name, String libraryID, ArrayList<Book> booksBorrowed) {
         this.name = name;
         this.libraryID = libraryID;
-        this.booksBorrowed = booksBorrowed;
+        this.booksBorrowed = new ArrayList<>();
     }
 
     public User(String name, String libraryID) {
