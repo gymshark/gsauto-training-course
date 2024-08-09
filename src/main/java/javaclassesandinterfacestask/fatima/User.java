@@ -6,7 +6,7 @@ public class User implements ILibraryActions {
 
     private String name;
     private String libraryID;
-    private ArrayList<Book> booksBorrowed = new ArrayList<>();
+    private ArrayList<Book> booksBorrowed;
     private boolean isAvailable;
 
     public User(String name, String libraryID, ArrayList<Book> booksBorrowed) {
