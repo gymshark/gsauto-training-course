@@ -1,15 +1,19 @@
-package session16webelementsandinteractions.examples.fatima;
+package session16webelementsandinteractions.tasks.fatima;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebElement;
 
-public class InteractionsTask {
+//3.	Verify that a submission confirmation appears.
+
+
+public class InteractionsFatima {
 
     public static void main(String[] args) {
 
         WebDriver driver = new ChromeDriver();
+
         driver.get("https://demoqa.com/automation-practice-form");
 
         WebElement firstName = driver.findElement(By.id("firstName"));
@@ -38,12 +42,9 @@ public class InteractionsTask {
 
 
         WebElement subjects = driver.findElement(By.id("subjectsContainer"));
-        subjects.sendKeys("History");
-        subjects.click();
-        subjects.sendKeys("eng");
-        subjects.click();
+        subjects.sendKeys("Hi");
+        subjects.sendKeys("english");
         subjects.sendKeys("ma");
-        subjects.click();
 
         WebElement sports = driver.findElement(By.id("hobbies-checkbox-1"));
         sports.click();
@@ -58,8 +59,8 @@ public class InteractionsTask {
         WebElement address = driver.findElement(By.id("currentAddress"));
         address.sendKeys("current test address. B99 666");
 
-        WebElement submitButton = driver.findElement(By.cssSelector(".btn btn-primary"));
-        submitButton.click();
+//        WebElement submitButton = driver.findElement(By.cssSelector(".btn btn-primary"));
+//        submitButton.click();
 
 
     }

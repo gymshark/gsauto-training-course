@@ -1,4 +1,4 @@
-package session16webelementsandinteractions.examples.kodi;
+package session16webelementsandinteractions.tasks.kodi;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

@@ -1,4 +1,4 @@
-package session15locators.examples.LocatorsTask_Maryam;
+package session15locators.tasks.maryam;
 
 public class Locators_Maryam {
 

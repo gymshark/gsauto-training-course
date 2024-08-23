@@ -1,4 +1,4 @@
-package session16webelementsandinteractions.examples.SeleniumInteractions_M;
+package session16webelementsandinteractions.tasks.SeleniumInteractions_M;
 
 import org.openqa.selenium.By;
 
