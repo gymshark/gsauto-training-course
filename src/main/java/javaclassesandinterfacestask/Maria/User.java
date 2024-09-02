@@ -5,10 +5,14 @@ import java.util.ArrayList;
 
 public class User implements  ILibraryActions {
 
+    private String name;
+    private String libraryID;
+    ArrayList<Book> booksBorrowed = new ArrayList<>();
 
     public User(String name, String libraryID) {
         this.name = name;
         this.libraryID = libraryID;
+
     }
 
     public String getName() {
@@ -27,29 +31,27 @@ public class User implements  ILibraryActions {
         this.libraryID = libraryID;
     }
 
-    public ArrayList<Books> getBooksBorrowed() {
+    public ArrayList<Book> getBooksBorrowed() {
         return booksBorrowed;
     }
 
-    public void setBooksBorrowed(ArrayList<Books> booksBorrowed) {
+    public void setBooksBorrowed(ArrayList<Book> booksBorrowed) {
         this.booksBorrowed = booksBorrowed;
     }
 
-    private String name;
-    private String libraryID;
-    ArrayList<Book> booksBorrowed = new ArrayList<>();
-public boolean borrowBook(Book book){
 
-    return false;
+    @Override
+    public void borrowBook() {
+        if
+
+    }
+
+    @Override
+    public void returnBook() {
+
+    }
 }
 
-public boolean returnBook(Book book){
-    return false;
-
-}
-
-
-}
 /* 1.	Create a User class.
 o	Properties:
 	name: a String representing the user's name.

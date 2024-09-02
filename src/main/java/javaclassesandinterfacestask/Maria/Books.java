@@ -20,7 +20,7 @@ public class Books {
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
-        this.isAvailable = isAvailable;
+        this.isAvailable = true;
     }
 
     public String getTitle() {
@@ -49,18 +49,18 @@ public class Books {
         isAvailable = available;
     }
 
- public boolean borrowBook(Books book ){
+ public void borrowBook(Books book){
         if(book.isAvailable){
-        isAvailable = true;
+        isAvailable = false;
+            System.out.println("Book borrowed successfully");
+        }else
+            System.out.println("Book not available ");
 
-        }
-
-     return false;
  }
 
- public boolean returnBook(Books book){
+ public void returnBook(Books book){
      isAvailable = true;
-     return true;
+     System.out.println("Book has been returned and is now available.");
  }
 
 
