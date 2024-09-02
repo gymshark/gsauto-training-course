@@ -2,9 +2,9 @@ package javaclassesandinterfacestask.Maria;
 
 public interface ILibraryActions {
 
-    void borrowBook();
+    void borrowBook(Books book);
 
-    void returnBook();
+    void returnBook(Books book);
 
 }
 /* Part 5: Abstract Classes or Interfaces (Optional)

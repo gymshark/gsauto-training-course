@@ -7,7 +7,7 @@ public class User implements  ILibraryActions {
 
     private String name;
     private String libraryID;
-    ArrayList<Book> booksBorrowed = new ArrayList<>();
+    ArrayList<Books> booksBorrowed = new ArrayList<>();
 
     public User(String name, String libraryID) {
         this.name = name;
@@ -31,24 +31,35 @@ public class User implements  ILibraryActions {
         this.libraryID = libraryID;
     }
 
-    public ArrayList<Book> getBooksBorrowed() {
+    public ArrayList<Books> getBooksBorrowed() {
         return booksBorrowed;
     }
 
-    public void setBooksBorrowed(ArrayList<Book> booksBorrowed) {
+    public void setBooksBorrowed(ArrayList<Books> booksBorrowed) {
         this.booksBorrowed = booksBorrowed;
     }
 
 
-    @Override
-    public void borrowBook() {
-        if
 
+
+   @Override
+    public void borrowBook(Books book){
+        if(book.isAvailable()){
+            booksBorrowed.add(book);
+            System.out.println("Book has been borrowed and added to borrowed list");
+        }else{
+            System.out.println("Book  not available to borrow");
+        }
     }
-
-    @Override
-    public void returnBook() {
-
+@Override
+    public void returnBook(Books book){
+        if(!book.isAvailable()){
+            booksBorrowed.remove(book);
+            System.out.println("Book has been returned and removed from borrowed list");
+        }else{
+            System.out.println("Book is available to borrow now");
+            book.setAvailable(true);
+        }
     }
 }
 

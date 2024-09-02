@@ -15,8 +15,8 @@ public class Librarian extends User {
     }
 
     @Override
-    public boolean borrowBook(Book book) {
-        return super.borrowBook(book);
+    public void borrowBook(Books book){
+        System.out.println("Book");
     }
 
     public void addBook(Books book) {
