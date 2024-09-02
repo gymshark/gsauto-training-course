@@ -8,36 +8,42 @@ import java.util.ArrayList;
 public class Librarian extends User {
 
 
+    ArrayList<Books> bookCatalog = new ArrayList<>();
     private String employeeID;
+
 
     public Librarian(String name, String libraryID, String employeeID) {
         super(name, libraryID);
+        this.employeeID = employeeID;
+    }
+
+
+    public void addBook(Books book) {
+        if (!bookCatalog.contains(book)) {
+            bookCatalog.add(book);
+            book.setAvailable(true);
+            System.out.println("Book Added to catalog");
+            System.out.println(book.isAvailable());
+        }
+    }
+
+    public void removeBook(Books book) {
+        if (bookCatalog.contains(book)) {
+            bookCatalog.remove(book);
+            book.setAvailable(false);
+            System.out.println("Book  removed from Catalog");
+            System.out.println(book.isAvailable());
+
+        }
     }
 
     @Override
-    public void borrowBook(Books book){
-        System.out.println("Book");
-    }
-
-    public void addBook(Books book) {
-        getBooksBorrowed().add(book);
-    }
-
-
-    public void removeBook(Books book) {
-        for (Books book : books) {
-            if (Books.ISBN.equals(ISBN)) {
-                book.remove(book);
-                break;
-            }
+    public void borrowBook(Books book) {
+        if (booksBorrowed.contains(book)) {
+            System.out.println("User -" + getName() + " cannot borrow the book as not available");
+        } else {
+            System.out.println("Wait a min, let me fetch the book for user -" + getName() + " to borrow");
         }
+
     }
 }
-/* Part 3: Implement Inheritance
-1.	Extend the User class with a Librarian class.
-o	Additional Properties:
-	employeeId: a String that represents the employee ID of the librarian.
-o	Additional Methods:
-	Methods to add or remove books from the library catalog.
-	Override the borrowBook method to include restrictions or logging, if needed.
-*/

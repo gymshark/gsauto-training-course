@@ -3,6 +3,23 @@ package javaclassesandinterfacestask.Maria;
 public class Books {
     private String title;
     private String author;
+    private String ISBN;
+    private boolean isAvailable;
+
+    public Books(String title, String author, String ISBN, boolean isAvailable) {
+        this.title = title;
+        this.author = author;
+        this.ISBN = ISBN;
+        this.isAvailable = true;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
 
     public String getISBN() {
         return ISBN;
@@ -10,17 +27,6 @@ public class Books {
 
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
-    }
-
-    private String ISBN;
-
-    private boolean isAvailable;
-
-    public Books(String title, String author, String isbn, boolean isAvailable) {
-        this.title = title;
-        this.author = author;
-        this.ISBN = ISBN;
-        this.isAvailable = true;
     }
 
     public String getTitle() {
@@ -39,43 +45,21 @@ public class Books {
         this.author = author;
     }
 
+    public void borrowBook(Books book) {
+        if (book.isAvailable) {
+            book.setAvailable(false);
+            System.out.println("Book -" + title + " by author- " + author + " with ISBN -" + ISBN + " was borrowed successfully");
+        } else
+            System.out.println("Book -" + title + " by author- " + author + " with ISBN -" + ISBN + " not available to borrow");
 
-
-    public boolean isAvailable() {
-        return isAvailable;
     }
 
-    public void setAvailable(boolean available) {
-        isAvailable = available;
+    public void returnBook(Books book) {
+        book.setAvailable(true);
+        System.out.println("Book - " + title + " by author- " + author + " with ISBN -" + ISBN + " was returned and is now available");
     }
 
- public void borrowBook(Books book){
-        if(book.isAvailable){
-        isAvailable = false;
-            System.out.println("Book borrowed successfully");
-        }else
-            System.out.println("Book not available ");
-
- }
-
- public void returnBook(Books book){
-     isAvailable = true;
-     System.out.println("Book has been returned and is now available.");
- }
-
-
-
-
+    public void printStatus() {
+        System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + ISBN);
+    }
 }
-/* 1.	Create a Book class.
-o	Properties:
-	title: a String representing the title of the book.
-	author: a String representing the author of the book.
-	isbn: a String representing the ISBN number of the book.
-	isAvailable: a boolean that indicates whether the book is available for checkout.
-o	Methods:
-	Constructor to initialise the Book objects.
-	Getters and setters for each property.
-	A method borrowBook() that changes the isAvailable status to false.
-	A method returnBook() that sets isAvailable back to true.
- */
