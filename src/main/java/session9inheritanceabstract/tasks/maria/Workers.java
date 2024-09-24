@@ -2,57 +2,58 @@ package session9inheritanceabstract.tasks.maria;
 
 
 public abstract class Workers {
-    private final String name;
-    private final String department;
 
-    //Parent Class Constructor
-    public Workers(String name, String department) {
-        this.name = name;
-        this.department = department;
-    }
+  private final String name;
+  private final String department;
 
-    //Main Class
-    public static void main(String[] args) {
+  //Parent Class Constructor
+  public Workers(String name, String department) {
+    this.name = name;
+    this.department = department;
+  }
 
-        RemoteWorker r1 = new RemoteWorker("Mona", "Development");
-        FactoryWorker f1 = new FactoryWorker("Hassan", "Machinery");
-        OfficeWorker o1 = new OfficeWorker("Leo", "People ");
+  //Getters
+  public String getName() {
+    return name;
+  }
 
-        // Displaying basic information of all types of workers - name and department.
-        r1.displayBasicInfo();
-        f1.displayBasicInfo();
-        o1.displayBasicInfo();
+  // Two abstract methods work() and takeBreak()
 
-        //Methods specifying the type of work and the breaks taken by each type of worker.
-        r1.work();
-        r1.takeBreak();
-        f1.work();
-        f1.takeBreak();
-        o1.work();
-        o1.takeBreak();
+  public String getDepartment() {
+    return department;
+  }
 
-    }
+  public abstract void work();
 
-    // Two abstract methods work() and takeBreak()
+  //Common method that can be shared by subclasses - Displays Workers basic information.
 
-    //Getters
-    public String getName() {
-        return name;
-    }
+  public abstract void takeBreak();
 
-    public String getDepartment() {
-        return department;
-    }
+  public void displayBasicInfo() {
+    System.out.println("Worker name - " + name + " ,Department- " + department);
+  }
 
-    //Common method that can be shared by subclasses - Displays Workers basic information.
+  //Main Class
+  public static void main(String[] args) {
 
-    public abstract void work();
+    RemoteWorker r1 = new RemoteWorker("Mona", "Development");
+    FactoryWorker f1 = new FactoryWorker("Hassan", "Machinery");
+    OfficeWorker o1 = new OfficeWorker("Leo", "People ");
 
-    public abstract void takeBreak();
+    // Displaying basic information of all types of workers - name and department.
+    r1.displayBasicInfo();
+    f1.displayBasicInfo();
+    o1.displayBasicInfo();
 
-    public void displayBasicInfo() {
-        System.out.println("Worker name - " + name + " ,Department- " + department);
-    }
+    //Methods specifying the type of work and the breaks taken by each type of worker.
+    r1.work();
+    r1.takeBreak();
+    f1.work();
+    f1.takeBreak();
+    o1.work();
+    o1.takeBreak();
+
+  }
 
 
 }

@@ -1,45 +1,44 @@
 package session11interfaces.tasks.maria;
 
-public class Television implements ElectronicDevice{
+public class Television implements ElectronicDevice {
 
-    private boolean on = false;
+  private boolean on = false;
 
-    @Override
+  @Override
 
-    public void turnOn() {
-        if(!on){
-            System.out.println("Television is OFF, turn it ON");
-            on = true;
-            System.out.println("Television has now been turned ON");
+  public void turnOn() {
+    if (!on) {
+      System.out.println("Television is OFF, turn it ON");
+      on = true;
+      System.out.println("Television has now been turned ON");
 
 
-        }else {
-            System.out.println("Television is already ON");
-        }
+    } else {
+      System.out.println("Television is already ON");
+    }
+  }
+
+  @Override
+
+  public void turnOff() {
+
+    if (on) {
+      System.out.println("Television is ON, turn it OFF");
+      on = false;
+      System.out.println("Television has now been turned OFF");
+
+    } else {
+      System.out.println("Television is already turned OFF");
     }
 
-    @Override
+  }
 
-    public void turnOff() {
+  @Override
 
-        if(on) {
-            System.out.println("Television is ON, turn it OFF");
-            on = false;
-            System.out.println("Television has now been turned OFF");
+  public boolean isOn() {
+    System.out.println("Is the Television ON  - " + on);
 
-        }
-        else{
-            System.out.println("Television is already turned OFF");
-        }
+    return on;
 
-    }
-
-    @Override
-
-    public boolean isOn() {
-        System.out.println("Is the Television ON  - " +on);
-
-        return on;
-
-    }
+  }
 }

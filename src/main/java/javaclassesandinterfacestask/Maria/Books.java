@@ -1,65 +1,66 @@
 package javaclassesandinterfacestask.Maria;
 
 public class Books {
-    private String title;
-    private String author;
-    private String ISBN;
-    private boolean isAvailable;
 
-    public Books(String title, String author, String ISBN, boolean isAvailable) {
-        this.title = title;
-        this.author = author;
-        this.ISBN = ISBN;
-        this.isAvailable = true;
-    }
+  private String title;
+  private String author;
+  private String ISBN;
+  private boolean isAvailable;
 
-    public boolean isAvailable() {
-        return isAvailable;
-    }
+  public Books(String title, String author, String ISBN, boolean isAvailable) {
+    this.title = title;
+    this.author = author;
+    this.ISBN = ISBN;
+    this.isAvailable = true;
+  }
 
-    public void setAvailable(boolean available) {
-        isAvailable = available;
-    }
+  public boolean isAvailable() {
+    return isAvailable;
+  }
 
-    public String getISBN() {
-        return ISBN;
-    }
+  public void setAvailable(boolean available) {
+    isAvailable = available;
+  }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
-    }
+  public String getISBN() {
+    return ISBN;
+  }
 
-    public String getTitle() {
-        return title;
-    }
+  public void setISBN(String ISBN) {
+    this.ISBN = ISBN;
+  }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  public String getTitle() {
+    return title;
+  }
 
-    public String getAuthor() {
-        return author;
-    }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
+  public String getAuthor() {
+    return author;
+  }
 
-    public void borrowBook(Books book) {
-        if (book.isAvailable) {
-            book.setAvailable(false);
-            System.out.println("Book -" + title + " by author- " + author + " with ISBN -" + ISBN + " was borrowed successfully");
-        } else
-            System.out.println("Book -" + title + " by author- " + author + " with ISBN -" + ISBN + " not available to borrow");
+  public void setAuthor(String author) {
+    this.author = author;
+  }
 
-    }
+  public void borrowBook(Books book) {
+    if (book.isAvailable) {
+      book.setAvailable(false);
+      System.out.println("Book -" + title + " by author- " + author + " with ISBN -" + ISBN + " was borrowed successfully");
+    } else
+      System.out.println("Book -" + title + " by author- " + author + " with ISBN -" + ISBN + " not available to borrow");
 
-    public void returnBook(Books book) {
-        book.setAvailable(true);
-        System.out.println("Book - " + title + " by author- " + author + " with ISBN -" + ISBN + " was returned and is now available");
-    }
+  }
 
-    public void printStatus() {
-        System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + ISBN);
-    }
+  public void returnBook(Books book) {
+    book.setAvailable(true);
+    System.out.println("Book - " + title + " by author- " + author + " with ISBN -" + ISBN + " was returned and is now available");
+  }
+
+  public void printStatus() {
+    System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + ISBN);
+  }
 }

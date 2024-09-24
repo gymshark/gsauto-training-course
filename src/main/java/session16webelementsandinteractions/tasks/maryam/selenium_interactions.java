@@ -1,4 +1,5 @@
 package session16webelementsandinteractions.tasks.maryam;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -6,80 +7,80 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public class selenium_interactions {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        // launch form
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://demoqa.com/automation-practice-form");
+    // launch form
+    WebDriver driver = new ChromeDriver();
+    driver.get("https://demoqa.com/automation-practice-form");
 
-        // Maximize the browser window
-        driver.manage().window().maximize();
+    // Maximize the browser window
+    driver.manage().window().maximize();
 
-        // wait for form to be visible
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("practice-form-wrapper")));
-
-
-
-        // name , lastname and email
-        driver.findElement(By .id("firstName")).sendKeys("Maryam");
-        driver.findElement(By.id("lastName")).sendKeys("Adnan");
-        driver.findElement(By.id("userEmail")).sendKeys("maryam.adnan@gymshark.com");
+    // wait for form to be visible
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("practice-form-wrapper")));
 
 
-        // gender
-        driver.findElement(By.cssSelector("label[for='gender-radio-2']")).click();
+    // name , lastname and email
+    driver.findElement(By.id("firstName")).sendKeys("Maryam");
+    driver.findElement(By.id("lastName")).sendKeys("Adnan");
+    driver.findElement(By.id("userEmail")).sendKeys("maryam.adnan@gymshark.com");
 
-        // mobile number
-        driver.findElement(By.id("userNumber")).sendKeys("1234567890");
 
-        // date of birth
-        driver.findElement(By.id("dateOfBirthInput")).click();
-        driver.findElement(By.cssSelector(".react-datepicker__year-select")).sendKeys("1989");
-        driver.findElement(By.cssSelector(".react-datepicker__month-select")).sendKeys("February");
-        driver.findElement(By.cssSelector(".react-datepicker__day--018")).click();
+    // gender
+    driver.findElement(By.cssSelector("label[for='gender-radio-2']")).click();
 
-        // select subjects
-        WebElement subjectsInput = driver.findElement(By.id("subjectsInput"));
-        subjectsInput.sendKeys("Maths");
-        subjectsInput.sendKeys("\n");
-        subjectsInput.sendKeys("English");
-        subjectsInput.sendKeys("\n");
-        subjectsInput.sendKeys("History");
+    // mobile number
+    driver.findElement(By.id("userNumber")).sendKeys("1234567890");
 
-        // select hobbies
-        WebElement hobbiesReading = driver.findElement(By.id("hobbies-checkbox-2"));
-        hobbiesReading.isSelected();
+    // date of birth
+    driver.findElement(By.id("dateOfBirthInput")).click();
+    driver.findElement(By.cssSelector(".react-datepicker__year-select")).sendKeys("1989");
+    driver.findElement(By.cssSelector(".react-datepicker__month-select")).sendKeys("February");
+    driver.findElement(By.cssSelector(".react-datepicker__day--018")).click();
 
-        WebElement hobbiesSports = driver.findElement(By.id("hobbies-checkbox-1"));
-        hobbiesSports.isSelected();
+    // select subjects
+    WebElement subjectsInput = driver.findElement(By.id("subjectsInput"));
+    subjectsInput.sendKeys("Maths");
+    subjectsInput.sendKeys("\n");
+    subjectsInput.sendKeys("English");
+    subjectsInput.sendKeys("\n");
+    subjectsInput.sendKeys("History");
 
-        // uploadPicture
-        WebElement uploadPicture = driver.findElement(By.id("uploadPicture"));
-        uploadPicture.sendKeys("/Users/maryamadnan/Desktop/test.jpg");
+    // select hobbies
+    WebElement hobbiesReading = driver.findElement(By.id("hobbies-checkbox-2"));
+    hobbiesReading.isSelected();
 
-        //EnterAddress
-        WebElement address = driver.findElement(By.id("currentAddress"));
-        address.sendKeys("48 MAPLETON ROAD B90 4WE");
+    WebElement hobbiesSports = driver.findElement(By.id("hobbies-checkbox-1"));
+    hobbiesSports.isSelected();
 
-        // scroll to bottom of the page
-        JavascriptExecutor scrollToBottom = (JavascriptExecutor) driver;
-        scrollToBottom.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    // uploadPicture
+    WebElement uploadPicture = driver.findElement(By.id("uploadPicture"));
+    uploadPicture.sendKeys("/Users/maryamadnan/Desktop/test.jpg");
 
-        // submit form
+    //EnterAddress
+    WebElement address = driver.findElement(By.id("currentAddress"));
+    address.sendKeys("48 MAPLETON ROAD B90 4WE");
 
-        driver.findElement(By.id("submit")).click();
+    // scroll to bottom of the page
+    JavascriptExecutor scrollToBottom = (JavascriptExecutor) driver;
+    scrollToBottom.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
-        // validate
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("modal-content")));
+    // submit form
 
-        // close the browser
-        driver.quit();
+    driver.findElement(By.id("submit")).click();
 
-    }
+    // validate
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("modal-content")));
+
+    // close the browser
+    driver.quit();
+
+  }
 
 }

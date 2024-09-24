@@ -1,22 +1,23 @@
 package session11interfaces.tasks.fatima;
 
 public class DeviceTestFatima {
-    public static void main(String[] args) {
 
-        TelevisionFatima tv = new TelevisionFatima();
-        RefrigeratorFatima fridge = new RefrigeratorFatima();
-        LampFatima lamp = new LampFatima();
+  public static void main(String[] args) {
 
-        tv.turnOff();
-        tv.isOn();
+    TelevisionFatima tv = new TelevisionFatima();
+    RefrigeratorFatima fridge = new RefrigeratorFatima();
+    LampFatima lamp = new LampFatima();
 
-        lamp.turnOff();
-        lamp.isOn();
-        lamp.turnOn();
-        lamp.isOn();
+    tv.turnOff();
+    tv.isOn();
 
-        fridge.turnOn();
-        fridge.isOn();
+    lamp.turnOff();
+    lamp.isOn();
+    lamp.turnOn();
+    lamp.isOn();
 
-    }
+    fridge.turnOn();
+    fridge.isOn();
+
+  }
 }

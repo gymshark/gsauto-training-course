@@ -9,7 +9,7 @@ public class Main {
     Worker officeWorker = new OfficeWorker("Tracey", "HR");
     Worker factoryWorker = new FactoryWorker("Chloe", "Production");
     Worker remoteWorker = new RemoteWorker("Iliana", "Marketing");
-    
+
     List<Worker> workers = Arrays.asList(officeWorker, factoryWorker, remoteWorker);
 
     for (Worker worker : workers) {

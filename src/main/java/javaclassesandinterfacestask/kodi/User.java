@@ -2,7 +2,7 @@ package javaclassesandinterfacestask.kodi;
 
 import java.util.ArrayList;
 
-public class User implements ILibraryActions{
+public class User implements ILibraryActions {
 
   // Fields
   private String name;

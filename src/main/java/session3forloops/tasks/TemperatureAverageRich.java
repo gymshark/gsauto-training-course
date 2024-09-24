@@ -1,21 +1,22 @@
 package session3forloops.tasks;
 
 public class TemperatureAverageRich {
-    public static void main(String[] args) {
 
-        //Declare and Initialise an Array
-        int[] dailyTemperatures = {5, 10, 11, 16, 17, 20};
-        int sum = 0;
+  public static void main(String[] args) {
 
-        //Loop to Calculate sum of temperature
-        for (int dailyTemperature : dailyTemperatures) {
-            sum += dailyTemperature;
-            System.out.println(sum);
-        }
-        //Calculate Average
-        int averageTemperature = (sum / dailyTemperatures.length);
+    //Declare and Initialise an Array
+    int[] dailyTemperatures = {5, 10, 11, 16, 17, 20};
+    int sum = 0;
 
-        //Output of results
-        System.out.println(averageTemperature);
+    //Loop to Calculate sum of temperature
+    for (int dailyTemperature : dailyTemperatures) {
+      sum += dailyTemperature;
+      System.out.println(sum);
     }
+    //Calculate Average
+    int averageTemperature = (sum / dailyTemperatures.length);
+
+    //Output of results
+    System.out.println(averageTemperature);
+  }
 }
