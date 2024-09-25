@@ -2,10 +2,10 @@ package session11interfaces.tasks.fatima;
 
 public interface ElectronicDeviceFatima {
 
-    void turnOn();
+  void turnOn();
 
-    void turnOff();
+  void turnOff();
 
-    boolean isOn();
+  boolean isOn();
 
 }

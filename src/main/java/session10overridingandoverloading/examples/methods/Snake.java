@@ -1,6 +1,6 @@
 package session10overridingandoverloading.examples.methods;
 
-public class Snake extends Animal{
+public class Snake extends Animal {
 
   @Override
   public void makeSound() {

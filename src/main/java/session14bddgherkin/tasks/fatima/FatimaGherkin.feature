@@ -5,4 +5,3 @@ Feature: Wishlist functionality
     When the user clicks on "Add to Wishlist"
     Then user see's a confirmation message in the snackbar
     And the item appears in the user's wishlist
-

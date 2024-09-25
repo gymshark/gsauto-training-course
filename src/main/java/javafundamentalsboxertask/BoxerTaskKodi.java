@@ -25,7 +25,7 @@ public class BoxerTaskKodi {
 
     for (int a = 1; a <= punches.length; a++) {
 
-    int punchPower = punches[a];
+      int punchPower = punches[a];
       // Pickup random punch from array
       String[] typeOfPunch =
         {"* Jab *",

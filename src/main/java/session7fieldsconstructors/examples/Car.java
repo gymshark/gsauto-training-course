@@ -2,8 +2,8 @@ package session7fieldsconstructors.examples;
 
 public class Car {
 
-  private String color;        // Instance field
   private static final int numberOfWheels = 4;  // Static field
+  private String color;        // Instance field
 
   public static void main(String[] args) {
     Car car1 = new Car();
