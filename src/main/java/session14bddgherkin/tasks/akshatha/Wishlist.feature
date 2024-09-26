@@ -1,8 +1,7 @@
 Feature: Wishlist Functionality
 
-  Scenario: Adding an item to the wishlist
-    Given User is logged in
+  Scenario: Adding a Product to the wishlist
+    Given User is logged into theit account
     And User is on the PDP screen
-    When User adds an item to the wishlist
-    Then Item is added to their Wishlist
-    And Confirmation message is displayed
+    When the product from product dislay page is added to the wishlist
+    Then that Product should appear in the Wishlist

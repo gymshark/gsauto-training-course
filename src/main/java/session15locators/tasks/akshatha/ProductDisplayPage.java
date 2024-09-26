@@ -10,5 +10,5 @@ public class ProductDisplayPage {
   private static final String XXL_SIZE_BUTTON = "pdp-size-xxl-select";
 
   private static final String ADD_TO_BAG_BUTTON = "pdp-addToBag-submit";
-  private static final String ADD_TO_WISHLIST_ICON = "pdp-addToWishlist-ad";
+  private static final String ADD_TO_WISHLIST_ICON = "pdp-addToWishlist-add";
 }
