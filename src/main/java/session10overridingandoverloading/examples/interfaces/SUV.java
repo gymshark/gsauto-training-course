@@ -1,6 +1,6 @@
 package session10overridingandoverloading.examples.interfaces;
 
-public class SUV implements Car{
+public class SUV implements Car {
 
   @Override
   public void drive() {

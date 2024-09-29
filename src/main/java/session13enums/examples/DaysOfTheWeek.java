@@ -14,13 +14,13 @@ public enum DaysOfTheWeek {
   private final boolean isWeekend;
 
   //Private constructor because the DaysOfTheWeek cannot be instantiated, but in here you will set your values up
-  DaysOfTheWeek(boolean isWeekend){
+  DaysOfTheWeek(boolean isWeekend) {
     this.isWeekend = isWeekend;
   }
 
   //Method you can call on any day of the week to find out whether or not its the weekend
-  public void isWeekend(){
-    if(isWeekend){
+  public void isWeekend() {
+    if (isWeekend) {
       System.out.println("WOOOO Its the weekend!");
     } else {
       System.out.println("It's not the weekend");

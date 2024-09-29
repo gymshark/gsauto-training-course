@@ -2,17 +2,17 @@ package session9inheritanceabstract.tasks.fatima;
 
 public class FactoryWorkerFatima extends WorkerFatima {
 
-    public FactoryWorkerFatima(String name, String department) {
-        super(name, department);
-    }
+  public FactoryWorkerFatima(String name, String department) {
+    super(name, department);
+  }
 
-    @Override
-    void work() {
-        System.out.println(name + " is currently using the machinery");
-    }
+  @Override
+  void work() {
+    System.out.println(name + " is currently using the machinery");
+  }
 
-    @Override
-    void takeBreak() {
-        System.out.println(name + " has not taken a break");
-    }
+  @Override
+  void takeBreak() {
+    System.out.println(name + " has not taken a break");
+  }
 }

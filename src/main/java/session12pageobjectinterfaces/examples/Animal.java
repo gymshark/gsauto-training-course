@@ -4,7 +4,7 @@ public class Animal {
 
   private final IAnimal activeAnimal;
 
-  public Animal(){
+  public Animal() {
     this.activeAnimal = new Cat();
   }
 
@@ -12,16 +12,18 @@ public class Animal {
     this.activeAnimal.makeSound();
   }
 
-  public void move(){
+  public void move() {
     this.activeAnimal.move();
   }
 
   interface IAnimal {
+
     void makeSound();
+
     void move();
   }
 
-  private static class Dog implements IAnimal{
+  private static class Dog implements IAnimal {
 
     @Override
     public void makeSound() {
@@ -34,7 +36,7 @@ public class Animal {
     }
   }
 
-  private static class Cat implements IAnimal{
+  private static class Cat implements IAnimal {
 
     @Override
     public void makeSound() {
