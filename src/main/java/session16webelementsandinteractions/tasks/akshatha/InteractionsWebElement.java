@@ -1,5 +1,6 @@
 package session16webelementsandinteractions.tasks.akshatha;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,14 +28,11 @@ public class InteractionsWebElement {
 
     WebElement dateOfBirth = driver.findElement(Locators.DATE_OF_BIRTH);
     action.moveToElement(dateOfBirth).click().perform();
-    WebElement dateOfBirthMonth = driver.findElement(Locators.DATE_OF_BIRTH_MONTH);
-    action.moveToElement(dateOfBirthMonth).click().perform();
-    dateOfBirthMonth.sendKeys("June");
-    WebElement dateOfBirthYear = driver.findElement(Locators.DATE_OF_BIRTH_YEAR);
-    action.moveToElement(dateOfBirthYear).click().perform();
-    dateOfBirthYear.sendKeys("2000");
-    WebElement dateOfBirthDay = driver.findElement(Locators.DATE_OF_BIRTH_DAY);
-    action.moveToElement(dateOfBirthDay).click().perform();
+    dateOfBirth.sendKeys(Keys.ENTER);
+
+    WebElement mobileNumber = driver.findElement(Locators.MOBILE_NUMBER);
+    action.moveToElement(mobileNumber).click().perform();
+    mobileNumber.sendKeys("07777777777");
 
     WebElement subjects = driver.findElement(Locators.SUBJECTS_TEXTBOX);
     action.moveToElement(subjects).click().perform();
@@ -54,6 +52,11 @@ public class InteractionsWebElement {
     WebElement submit = driver.findElement(Locators.SUBMIT_BUTTON);
     submit.click();
 
+    WebElement confirmationText = driver.findElement(Locators.CONFIRMATION_TEXT);
+    driver.getWindowHandle();
+    confirmationText.isDisplayed();
+
     driver.quit();
+
   }
 }
