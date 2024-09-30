@@ -1,16 +1,15 @@
 package session11interfaces.tasks.kodi;
 
-public class Television implements ElectronicDevice{
+public class Television implements ElectronicDevice {
 
- private boolean powerOn = true;
+  private boolean powerOn = true;
 
   @Override
   public void turnOn() {
     if (!powerOn) {
       powerOn = true;
       System.out.println("Television is now ON.");
-    }
-    else System.out.println("Television was already ON");
+    } else System.out.println("Television was already ON");
   }
 
   @Override
@@ -18,8 +17,7 @@ public class Television implements ElectronicDevice{
     if (powerOn) {
       powerOn = false;
       System.out.println("Television is now OFF.");
-    }
-    else System.out.println("Television was already OFF");
+    } else System.out.println("Television was already OFF");
   }
 
   @Override

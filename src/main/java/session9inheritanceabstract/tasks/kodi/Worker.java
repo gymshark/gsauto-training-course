@@ -12,6 +12,7 @@ public abstract class Worker {
 
   // Define abstract methods work() and takeBreak()
   public abstract void work();
+
   public abstract void takeBreak();
 
   // Concrete method to display basic information about the worker

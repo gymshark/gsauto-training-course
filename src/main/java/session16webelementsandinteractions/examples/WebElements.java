@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebElements {
 
-    public static void main(String[] args) {
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://demoqa.com/automation-practice-form");
+  public static void main(String[] args) {
+    WebDriver driver = new ChromeDriver();
+    driver.get("https://demoqa.com/automation-practice-form");
 
-        WebElement firstName = driver.findElement(Locators.FIRST_NAME);
-        firstName.sendKeys("Daniel Williams");
-    }
+    WebElement firstName = driver.findElement(Locators.FIRST_NAME);
+    firstName.sendKeys("Daniel Williams");
+  }
 }

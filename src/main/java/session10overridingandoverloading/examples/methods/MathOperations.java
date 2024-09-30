@@ -21,8 +21,8 @@ public class MathOperations {
   public static void main(String[] args) {
     MathOperations mathOperations = new MathOperations();
 
-    mathOperations.add(1,2);
-    mathOperations.add(1,2,3,4);
+    mathOperations.add(1, 2);
+    mathOperations.add(1, 2, 3, 4);
 
     mathOperations.add(2.0, 6.0);
   }

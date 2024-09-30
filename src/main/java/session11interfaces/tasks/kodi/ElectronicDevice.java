@@ -3,12 +3,12 @@ package session11interfaces.tasks.kodi;
 public interface ElectronicDevice {
 
 
-    void turnOn();
+  void turnOn();
 
 
-    void turnOff();
+  void turnOff();
 
 
-    boolean isOn();
+  boolean isOn();
 
 }

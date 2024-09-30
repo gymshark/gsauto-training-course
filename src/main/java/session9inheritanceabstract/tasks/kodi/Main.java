@@ -1,6 +1,7 @@
 package session9inheritanceabstract.tasks.kodi;
 
 public class Main {
+
   public static void main(String[] args) {
     OfficeWorker officeWorker = new OfficeWorker("Terence Crawford", "Marketing");
     FactoryWorker factoryWorker = new FactoryWorker("Kodi-Lee Johnson", "Machine Shop");

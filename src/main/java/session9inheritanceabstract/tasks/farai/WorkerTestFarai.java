@@ -7,7 +7,7 @@ public class WorkerTestFarai {
     WorkerFarai officeWorker = new OfficeWorkerFarai("Fatima", "Brand");
     WorkerFarai factoryWorker = new FactoryWorkerFarai("Owyn", "Metallurgy");
     WorkerFarai remoteWorker = new RemoteWorkerFarai("Vix", "Tech");
-    
+
     officeWorker.displayInfo();
     officeWorker.work();
     officeWorker.takeBreak();
