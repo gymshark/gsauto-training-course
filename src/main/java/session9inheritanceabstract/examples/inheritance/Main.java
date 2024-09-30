@@ -1,16 +1,17 @@
 package session9inheritanceabstract.examples.inheritance;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Dog dog = new Dog("Fred");
-        Cat cat = new Cat("Bobby");
+  public static void main(String[] args) {
 
-        dog.run(15);
-        cat.run(20);
-        dog.setCollarColour("Red");
-        System.out.println(dog.getCollarColour());
+    Dog dog = new Dog("Fred");
+    Cat cat = new Cat("Bobby");
 
-        cat.hunt();
-    }
+    dog.run(15);
+    cat.run(20);
+    dog.setCollarColour("Red");
+    System.out.println(dog.getCollarColour());
+
+    cat.hunt();
+  }
 }

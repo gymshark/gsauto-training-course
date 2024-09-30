@@ -1,29 +1,30 @@
 package session5strings.tasks;
 
 public class StringsExerciseMaryam {
-    public static void main(String[] args) {
-        // defining data for email and username
-        String email = "maryam.adnan@gymshark.com";
-        String name = "maryam adnan";
 
-        // methods extracting user name
-        int indexPosition = email.indexOf('@');
-        String username = email.substring(0, indexPosition);
+  public static void main(String[] args) {
+    // defining data for email and username
+    String email = "maryam.adnan@gymshark.com";
+    String name = "maryam adnan";
 
-        // conversion of name to uppercase
-        String UpperCaseName = name.toUpperCase();
+    // methods extracting user name
+    int indexPosition = email.indexOf('@');
+    String username = email.substring(0, indexPosition);
 
-        // comparing usernames
-        String CompareName = name.replaceAll(" ", ".");
-        boolean nameEqualsTo = username.equalsIgnoreCase(CompareName);
+    // conversion of name to uppercase
+    String UpperCaseName = name.toUpperCase();
 
-        // string builder
+    // comparing usernames
+    String CompareName = name.replaceAll(" ", ".");
+    boolean nameEqualsTo = username.equalsIgnoreCase(CompareName);
 
-      String result = "Original Name:" + name + "\n" +
-        "UpperCase Name:" + UpperCaseName + "\n" +
-        "Extracted Username:" + username + "\n" +
-        "Does the username match the name? " + (nameEqualsTo ? "Yes" : "No") + "\n";
-        System.out.println(result);
+    // string builder
 
-    }
+    String result = "Original Name:" + name + "\n" +
+      "UpperCase Name:" + UpperCaseName + "\n" +
+      "Extracted Username:" + username + "\n" +
+      "Does the username match the name? " + (nameEqualsTo ? "Yes" : "No") + "\n";
+    System.out.println(result);
+
+  }
 }

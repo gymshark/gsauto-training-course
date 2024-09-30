@@ -1,24 +1,25 @@
 package session5strings.tasks;
 
 public class StringManipulationAndFormattingAkeem {
-    public static void main(String[] args) {
 
-        //Predefined Data
-        String email = "akeem.watson@gymshark.com";
-        String name = "Akeem Watson";
+  public static void main(String[] args) {
 
-        //String Methods
-        String extractedUsername = email.substring(0,email.indexOf("@"));
-        String nameUpperCased = name.toUpperCase();
+    //Predefined Data
+    String email = "akeem.watson@gymshark.com";
+    String name = "Akeem Watson";
 
-        //String Equality
-        boolean isNameMatched = extractedUsername.equalsIgnoreCase(name.replaceAll(" ", "."));
+    //String Methods
+    String extractedUsername = email.substring(0, email.indexOf("@"));
+    String nameUpperCased = name.toUpperCase();
 
-        //StringBuilder
-        StringBuilder stringBuilder = new StringBuilder();
-        StringBuilder message = stringBuilder.append(email).append("\n").append(extractedUsername).append("\n")
-                .append(nameUpperCased).append("\n").append(isNameMatched);
+    //String Equality
+    boolean isNameMatched = extractedUsername.equalsIgnoreCase(name.replaceAll(" ", "."));
 
-        System.out.println(message);
-    }
+    //StringBuilder
+    StringBuilder stringBuilder = new StringBuilder();
+    StringBuilder message = stringBuilder.append(email).append("\n").append(extractedUsername).append("\n")
+      .append(nameUpperCased).append("\n").append(isNameMatched);
+
+    System.out.println(message);
+  }
 }

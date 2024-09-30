@@ -1,23 +1,24 @@
 package session9inheritanceabstract.tasks.fatima;
 
 public class MainFatima {
-    public static void main(String[] args) {
-        OfficeWorkerFatima officeWorker = new OfficeWorkerFatima("Scott", "HR");
-        FactoryWorkerFatima factoryWorker = new FactoryWorkerFatima("Fred", "Machinery");
-        RemoteWorkerFatima remoteWorker = new RemoteWorkerFatima("Jean", "IT");
 
-        System.out.println(officeWorker.displayBasicInformation());
-        System.out.println(factoryWorker.displayBasicInformation());
-        System.out.println(remoteWorker.displayBasicInformation());
+  public static void main(String[] args) {
+    OfficeWorkerFatima officeWorker = new OfficeWorkerFatima("Scott", "HR");
+    FactoryWorkerFatima factoryWorker = new FactoryWorkerFatima("Fred", "Machinery");
+    RemoteWorkerFatima remoteWorker = new RemoteWorkerFatima("Jean", "IT");
 
-        officeWorker.work();
-        officeWorker.takeBreak();
+    System.out.println(officeWorker.displayBasicInformation());
+    System.out.println(factoryWorker.displayBasicInformation());
+    System.out.println(remoteWorker.displayBasicInformation());
 
-        factoryWorker.work();
-        factoryWorker.takeBreak();
+    officeWorker.work();
+    officeWorker.takeBreak();
 
-        remoteWorker.work();
-        remoteWorker.takeBreak();
+    factoryWorker.work();
+    factoryWorker.takeBreak();
 
-    }
+    remoteWorker.work();
+    remoteWorker.takeBreak();
+
+  }
 }
