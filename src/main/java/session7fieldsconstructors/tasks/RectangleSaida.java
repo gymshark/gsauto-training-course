@@ -30,7 +30,7 @@ public class RectangleSaida {
         System.out.println("The perimeter of the rectangle using Default Constructor is " + defaultConstructor.calculatePerimeter());
 
         RectangleSaida parameterizedConstructor = new RectangleSaida(10, 20);
-        System.out.println("The area of the rectangle using Default Constructor is " + parameterizedConstructor.calculateArea());
-        System.out.println("The perimeter of the rectangle using Default Constructor is " + parameterizedConstructor.calculatePerimeter());
+        System.out.println("The area of the rectangle using Parameterized Constructor is " + parameterizedConstructor.calculateArea());
+        System.out.println("The perimeter of the rectangle using Parameterized Constructor is " + parameterizedConstructor.calculatePerimeter());
     }
 }
