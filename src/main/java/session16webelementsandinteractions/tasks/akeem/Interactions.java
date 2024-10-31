@@ -39,8 +39,6 @@ public class Interactions {
                 .click()
                 .perform();
 
-        threadSleep();
-
         WebElement confirmationModal = driver.findElement(By.cssSelector(".modal-content"));
         confirmationModal.isDisplayed();
     }
@@ -56,13 +54,5 @@ public class Interactions {
 
     public static Actions actions() {
         return new Actions(driver);
-    }
-
-    public static void threadSleep() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
