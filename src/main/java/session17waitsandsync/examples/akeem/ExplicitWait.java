@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class ExplicitWait {
@@ -18,8 +19,8 @@ public class ExplicitWait {
         driver.get("https://the-internet.herokuapp.com/dynamic_loading");
         driver.manage().window().maximize();
 
-        wait.until(visibilityOfElementLocated(By.cssSelector("a[href=\"/dynamic_loading/2\"]"))).click();
-        wait.until(visibilityOfElementLocated(By.cssSelector("div[id='start'] button"))).click();
+        wait.until(elementToBeClickable(By.cssSelector("a[href=\"/dynamic_loading/2\"]"))).click();
+        wait.until(elementToBeClickable(By.cssSelector("div[id='start'] button"))).click();
         wait.until(visibilityOfElementLocated(By.cssSelector("div[id='finish']")));
 
         driver.quit();
